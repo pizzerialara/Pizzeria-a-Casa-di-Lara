@@ -144,17 +144,14 @@
     ::-webkit-scrollbar {
       width: 5px;
     }
-    
     ::-webkit-scrollbar-track {
       background: var(--beige);
     }
-    
     ::-webkit-scrollbar-thumb {
       background: var(--red);
       border-radius: 99px;
     }
 
-    /* ── NOISE TEXTURE ────────────────────────────── */
     body::after {
       content: '';
       position: fixed;
@@ -165,42 +162,7 @@
       opacity: 0.025;
     }
 
-    /* ── REVEAL ───────────────────────────────────── */
-    .rv {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity .7s var(--ease), transform .7s var(--ease);
-    }
-    .rv.on {
-      opacity: 1;
-      transform: none;
-    }
-    .rl {
-      opacity: 0;
-      transform: translateX(-30px);
-      transition: opacity .7s var(--ease), transform .7s var(--ease);
-    }
-    .rl.on {
-      opacity: 1;
-      transform: none;
-    }
-    .rr {
-      opacity: 0;
-      transform: translateX(30px);
-      transition: opacity .7s var(--ease), transform .7s var(--ease);
-    }
-    .rr.on {
-      opacity: 1;
-      transform: none;
-    }
-    .d1 { transition-delay: .08s; }
-    .d2 { transition-delay: .16s; }
-    .d3 { transition-delay: .24s; }
-    .d4 { transition-delay: .32s; }
-    .d5 { transition-delay: .40s; }
-    .d6 { transition-delay: .48s; }
-
-    /* ── HEADER ───────────────────────────────────── */
+    /* HEADER */
     header {
       position: fixed;
       top: 0;
@@ -246,14 +208,6 @@
       letter-spacing: .01em;
       text-shadow: 1px 1px 0 rgba(255, 255, 255, .6);
     }
-    .logo-sub {
-      font-size: .65rem;
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      margin-top: 1px;
-    }
     .nav-links {
       display: flex;
       align-items: center;
@@ -278,32 +232,9 @@
       border-radius: 2px;
       transition: width .3s var(--ease);
     }
-    .nav-links a:hover {
-      color: var(--red);
-    }
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-    .btn-order {
-      background: var(--red);
-      color: #fff;
-      padding: 9px 22px;
-      border-radius: 99px;
-      font-size: .8rem;
-      font-weight: 800;
-      letter-spacing: .03em;
-      box-shadow: 0 4px 16px rgba(200, 25, 26, .35);
-      transition: all .25s;
-      white-space: nowrap;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-order:hover {
-      background: var(--red-dark);
-      transform: translateY(-1px);
-      box-shadow: 0 7px 22px rgba(200, 25, 26, .45);
-    }
+    .nav-links a:hover { color: var(--red); }
+    .nav-links a:hover::after { width: 100%; }
+    
     .hamburger {
       display: none;
       flex-direction: column;
@@ -318,7 +249,7 @@
       transition: all .3s;
     }
 
-    /* ── MOBILE NAV ───────────────────────────────── */
+    /* MOBILE NAV */
     .mob-nav {
       display: none;
       position: fixed;
@@ -331,18 +262,14 @@
       justify-content: center;
       gap: 24px;
     }
-    .mob-nav.open {
-      display: flex;
-    }
+    .mob-nav.open { display: flex; }
     .mob-nav a {
       font-family: var(--font-head);
       font-size: clamp(1.9rem, 6vw, 3rem);
       color: var(--text-mid);
       transition: color .2s;
     }
-    .mob-nav a:hover {
-      color: var(--red);
-    }
+    .mob-nav a:hover { color: var(--red); }
     .mob-close {
       position: absolute;
       top: 22px;
@@ -351,7 +278,7 @@
       color: var(--text-dim);
     }
 
-    /* ── HERO ─────────────────────────────────────── */
+    /* HERO */
     .hero {
       min-height: 100svh;
       background: linear-gradient(155deg, #fff5e0 0%, #fdf0d5 30%, #fff8f0 60%, #fef9f0 100%);
@@ -382,16 +309,6 @@
       background: radial-gradient(circle, rgba(212, 160, 23, .13) 0%, transparent 70%);
       border: 2px dashed rgba(212, 160, 23, .18);
     }
-    .hero-deco-2 {
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      bottom: 60px;
-      left: -80px;
-      background: radial-gradient(circle, rgba(200, 25, 26, .07) 0%, transparent 70%);
-      border: 1.5px dashed rgba(200, 25, 26, .12);
-    }
     .hero-inner {
       max-width: 1200px;
       margin: 0 auto;
@@ -418,8 +335,6 @@
       letter-spacing: .12em;
       text-transform: uppercase;
       margin-bottom: 18px;
-      opacity: 0;
-      animation: fadeup .6s var(--ease) .2s forwards;
     }
     .hero h1 {
       font-family: var(--font-head);
@@ -427,27 +342,19 @@
       color: var(--text);
       line-height: 1.1;
       margin-bottom: 18px;
-      opacity: 0;
-      animation: fadeup .7s var(--ease) .35s forwards;
     }
     .hero h1 .red { color: var(--red); }
-    .hero h1 .gold { color: var(--gold); }
-    
     .hero-desc {
       font-size: clamp(.95rem, 1.3vw, 1.1rem);
       color: var(--text-mid);
       line-height: 1.75;
       margin-bottom: 32px;
       font-weight: 500;
-      opacity: 0;
-      animation: fadeup .7s var(--ease) .5s forwards;
     }
     .hero-btns {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      opacity: 0;
-      animation: fadeup .7s var(--ease) .65s forwards;
     }
     .btn-red {
       background: var(--red);
@@ -487,8 +394,6 @@
       gap: 10px;
       margin-top: 24px;
       flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeup .7s var(--ease) .8s forwards;
     }
     .trust-pill {
       background: var(--white);
@@ -509,13 +414,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0;
-      animation: fadeup .9s var(--ease) .4s forwards;
     }
     .logo-big-wrap {
       position: relative;
-      width: min(420px, 90vw);
-      height: min(420px, 90vw);
+      width: min(380px, 85vw);
+      height: min(380px, 85vw);
     }
     .logo-big-ring {
       position: absolute;
@@ -526,14 +429,14 @@
     }
     .logo-big-ring-2 {
       position: absolute;
-      inset: 30px;
+      inset: 25px;
       border-radius: 50%;
       border: 1.5px dashed rgba(212, 160, 23, .2);
       animation: spin 25s linear infinite reverse;
     }
     .logo-big-img {
       position: absolute;
-      inset: 16px;
+      inset: 14px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 20px 60px rgba(150, 30, 0, .22), 0 0 0 4px rgba(212, 160, 23, .25);
@@ -546,15 +449,10 @@
       40% { transform: translateY(-14px) rotate(1.5deg); }
       70% { transform: translateY(-6px) rotate(-.8deg); }
     }
-    @keyframes fadeup {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: none; }
-    }
 
-    /* ── RED STRIP ────────────────────────────────── */
+    /* RED STRIP */
     .red-strip {
       background: var(--red);
-      padding: 0;
       position: relative;
       z-index: 1;
     }
@@ -568,20 +466,13 @@
       gap: clamp(22px, 5vw, 70px);
       flex-wrap: wrap;
     }
-    .strip-stat {
-      text-align: center;
-      color: #fff;
-    }
+    .strip-stat { text-align: center; color: #fff; }
     .strip-n {
       font-family: var(--font-head);
       font-size: clamp(2rem, 3.5vw, 3rem);
       line-height: 1;
-      color: #fff;
     }
-    .strip-n em {
-      color: var(--gold-light);
-      font-style: normal;
-    }
+    .strip-n em { color: var(--gold-light); font-style: normal; }
     .strip-l {
       font-size: .68rem;
       font-weight: 700;
@@ -590,20 +481,11 @@
       opacity: .75;
       margin-top: 3px;
     }
-    .strip-sep {
-      width: 1px;
-      height: 48px;
-      background: rgba(255, 255, 255, .2);
-    }
+    .strip-sep { width: 1px; height: 48px; background: rgba(255, 255, 255, .2); }
 
-    /* ── SECTIONS ─────────────────────────────────── */
-    section {
-      padding: clamp(64px, 9vw, 110px) 5vw;
-    }
-    .si {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    /* SECTIONS COMMON */
+    section { padding: clamp(64px, 9vw, 110px) 5vw; }
+    .si { max-width: 1200px; margin: 0 auto; }
     .stag {
       display: inline-flex;
       align-items: center;
@@ -616,48 +498,14 @@
       margin-bottom: 10px;
     }
     .stag::before {
-      content: '';
-      width: 18px;
-      height: 2px;
-      background: var(--red);
-      border-radius: 2px;
+      content: ''; width: 18px; height: 2px; background: var(--red); border-radius: 2px;
     }
-    h2 {
-      font-family: var(--font-head);
-      font-size: clamp(2rem, 4.5vw, 3.8rem);
-      color: var(--text);
-      line-height: 1.1;
-    }
-    h2 em {
-      font-style: italic;
-      color: var(--red);
-    }
-    h2 .g { color: var(--gold); }
+    h2 { font-family: var(--font-head); font-size: clamp(2rem, 4.5vw, 3.5rem); color: var(--text); line-height: 1.1; }
+    h2 em { font-style: italic; color: var(--red); }
 
-    /* ── CHI SIAMO ────────────────────────────────── */
-    #chi-siamo {
-      background: var(--white);
-      position: relative;
-      overflow: hidden;
-    }
-    #chi-siamo::before {
-      content: 'Lara';
-      position: absolute;
-      right: 3vw;
-      bottom: -0.05em;
-      font-family: var(--font-logo);
-      font-size: clamp(6rem, 18vw, 18rem);
-      color: rgba(200, 25, 26, .04);
-      pointer-events: none;
-      user-select: none;
-      line-height: 1;
-    }
-    .chi-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(36px, 6vw, 80px);
-      align-items: center;
-    }
+    /* CHI SIAMO */
+    #chi-siamo { background: var(--white); position: relative; overflow: hidden; }
+    .chi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); align-items: center; }
     .chi-text .pullquote {
       font-family: var(--font-logo);
       font-size: clamp(1.3rem, 2vw, 1.75rem);
@@ -667,42 +515,12 @@
       padding-left: 18px;
       margin: 20px 0 22px;
     }
-    .chi-text p {
-      font-size: .93rem;
-      color: var(--text-mid);
-      line-height: 1.85;
-      margin-bottom: 16px;
-      font-weight: 500;
-    }
-    .pillars {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 28px;
-    }
-    .pillar {
-      background: var(--beige);
-      border: 1.5px solid var(--border);
-      border-radius: var(--r);
-      padding: 18px;
-      transition: all .3s var(--ease);
-    }
-    .pillar:hover {
-      border-color: var(--red);
-      background: var(--red-soft);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px var(--shadow);
-    }
-    .pillar-ico {
-      font-size: 1.5rem;
-      margin-bottom: 7px;
-    }
-    .pillar p {
-      font-size: .75rem;
-      color: var(--text-dim);
-      line-height: 1.5;
-      margin: 0;
-    }
+    .chi-text p { font-size: .93rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 16px; font-weight: 500; }
+    .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+    .pillar { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--r); padding: 18px; }
+    .pillar-ico { font-size: 1.5rem; margin-bottom: 7px; }
+    .pillar p { font-size: .75rem; color: var(--text-dim); line-height: 1.5; margin: 0; }
+    
     .chi-visual { position: relative; }
     .chi-img-box {
       border-radius: var(--rl);
@@ -727,53 +545,13 @@
       box-shadow: 0 8px 28px rgba(200, 25, 26, .38);
       z-index: 2;
     }
-    .chi-badge-1 .b-n {
-      font-family: var(--font-head);
-      font-size: 2rem;
-      line-height: 1;
-    }
-    .chi-badge-1 .b-l {
-      font-size: .65rem;
-      font-weight: 800;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      opacity: .85;
-    }
-    .chi-badge-2 {
-      position: absolute;
-      top: 28px;
-      right: -18px;
-      background: var(--white);
-      border: 2px solid var(--border-2);
-      border-radius: var(--r);
-      padding: 14px 18px;
-      box-shadow: 0 8px 24px var(--shadow-md);
-      z-index: 2;
-      text-align: center;
-    }
-    .chi-badge-2 .b-n {
-      font-family: var(--font-head);
-      font-size: 1.7rem;
-      color: var(--gold);
-      line-height: 1;
-    }
-    .chi-badge-2 .b-l {
-      font-size: .62rem;
-      font-weight: 800;
-      color: var(--text-dim);
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
+    .chi-badge-1 .b-n { font-family: var(--font-head); font-size: 2rem; line-height: 1; }
+    .chi-badge-1 .b-l { font-size: .65rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
 
-    /* ── MENU ─────────────────────────────────────── */
+    /* MENU DESIGN */
     #menu { background: var(--beige); }
-    .menu-hd { margin-bottom: 40px; }
-    .tabs {
-      display: flex;
-      gap: 8px;
-      margin-top: 28px;
-      flex-wrap: wrap;
-    }
+    .menu-hd { margin-bottom: 30px; }
+    .tabs { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
     .tab {
       padding: 9px 20px;
       border-radius: 99px;
@@ -790,41 +568,24 @@
       color: #fff;
       box-shadow: 0 4px 14px rgba(200, 25, 26, .32);
     }
-    .tab:not(.on):hover {
-      border-color: var(--red);
-      color: var(--red);
-    }
     .panel { display: none; }
     .panel.on { display: block; }
-    .mnote {
-      font-size: .78rem;
-      color: var(--text-muted);
-      font-style: italic;
-      margin-bottom: 24px;
-      font-weight: 500;
-    }
+    
     .msec-title {
       font-family: var(--font-head);
-      font-size: 1.2rem;
-      color: var(--text);
-      margin: 32px 0 14px;
+      font-size: 1.3rem;
+      color: var(--red-dark);
+      margin: 40px 0 20px;
       padding-bottom: 8px;
-      border-bottom: 2px solid var(--border-2);
+      border-bottom: 3px solid var(--gold);
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .msec-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, var(--border-2), transparent);
-    }
-
     .pgrid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
+      gap: 20px;
     }
     .pcard {
       background: var(--white);
@@ -833,6 +594,9 @@
       overflow: hidden;
       transition: all .32s var(--ease);
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .pcard:hover {
       border-color: var(--red);
@@ -841,544 +605,110 @@
     }
     .pcard-top {
       background: linear-gradient(135deg, var(--beige) 0%, var(--beige-2) 100%);
-      padding: 20px 20px 12px;
+      padding: 18px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
     }
-    .pcard-emo {
-      font-size: 2.4rem;
-      line-height: 1;
-    }
+    .pcard-emo { font-size: 2.2rem; line-height: 1; }
     .pcard-price { text-align: right; }
-    .pcard-price .from {
-      display: block;
-      font-size: .58rem;
-      font-weight: 800;
-      color: var(--text-muted);
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .pcard-price .amt {
-      font-family: var(--font-head);
-      font-size: 1.35rem;
-      color: var(--red);
-    }
-    .pcard-body { padding: 14px 18px 18px; }
-    .pcard-body h3 {
-      font-family: var(--font-head);
-      font-size: 1.15rem;
-      color: var(--text);
-      margin-bottom: 5px;
-    }
-    .pcard-body .desc {
-      font-size: .78rem;
-      color: var(--text-dim);
-      line-height: 1.55;
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-    .allergen {
-      background: var(--beige);
-      border-radius: 7px;
-      padding: 5px 9px;
-      font-size: .68rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-      font-weight: 600;
-    }
-    .allergen strong { color: var(--red-dark); }
+    .pcard-price .amt { font-family: var(--font-head); font-size: 1.3rem; color: var(--red); }
+    .pcard-body { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .pcard-body h3 { font-family: var(--font-head); font-size: 1.15rem; color: var(--text); margin-bottom: 6px; }
+    .pcard-body .desc { font-size: .82rem; color: var(--text-dim); line-height: 1.5; margin-bottom: 12px; }
+    .allergen { background: var(--beige); border-radius: 6px; padding: 4px 8px; font-size: .68rem; color: var(--text-dim); }
     .pcard-sig {
       position: absolute;
       top: 10px;
       right: 10px;
       background: var(--gold);
       color: #fff;
-      font-size: .6rem;
+      font-size: .58rem;
       font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
       padding: 3px 8px;
       border-radius: 99px;
+      text-transform: uppercase;
     }
 
-    .llist {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    /* KEBAB & SFIZIOSITA */
+    .llist { display: flex; flex-direction: column; gap: 12px; }
     .litem {
       background: var(--white);
       border: 1.5px solid var(--border);
       border-radius: var(--r);
-      padding: 15px 20px;
+      padding: 16px 20px;
       display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      transition: border-color .25s, box-shadow .25s;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
     }
-    .litem:hover {
-      border-color: var(--red);
-      box-shadow: 0 4px 16px var(--shadow);
-    }
-    .litem-ico {
-      font-size: 1.7rem;
-      flex-shrink: 0;
-      line-height: 1;
-      margin-top: 2px;
-    }
-    .litem-body { flex: 1; }
-    .litem-body h3 {
-      font-family: var(--font-head);
-      font-size: 1.05rem;
-      color: var(--text);
-      margin-bottom: 3px;
-    }
-    .litem-body p {
-      font-size: .78rem;
-      color: var(--text-dim);
-      line-height: 1.5;
-      font-weight: 500;
-    }
-    .litem-body small {
-      font-size: .68rem;
-      color: var(--text-muted);
-      font-weight: 600;
-      display: block;
-      margin-top: 4px;
-    }
-    .litem-price {
-      font-family: var(--font-head);
-      font-size: 1.2rem;
-      color: var(--red);
-      flex-shrink: 0;
-      white-space: nowrap;
-      margin-top: 2px;
-    }
-    .lgrid2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+    .litem-main { display: flex; align-items: center; gap: 14px; }
+    .litem-ico { font-size: 2rem; }
+    .litem-body h3 { font-family: var(--font-head); font-size: 1.1rem; color: var(--text); }
+    .litem-body p { font-size: .82rem; color: var(--text-dim); }
+    .litem-price { font-family: var(--font-head); font-size: 1.25rem; color: var(--red); white-space: nowrap; }
 
-    /* ── CONSEGNA BANNER ──────────────────────────── */
-    #consegna {
-      background: var(--red);
-      position: relative;
-      overflow: hidden;
-      padding: clamp(50px, 8vw, 90px) 5vw;
-    }
-    #consegna::before {
-      content: '';
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      right: -15%;
-      top: -60%;
-      background: rgba(255, 255, 255, .05);
-    }
-    #consegna::after {
-      content: '';
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      left: -8%;
-      bottom: -50%;
-      background: rgba(212, 160, 23, .12);
-    }
+    /* CONSEGNA BANNER */
+    #consegna { background: var(--red); position: relative; overflow: hidden; padding: clamp(50px, 8vw, 90px) 5vw; }
     .consegna-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+      max-width: 1200px; margin: 0 auto; display: flex; align-items: center;
+      justify-content: space-between; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;
     }
-    .consegna-text h2 {
-      color: #fff;
-      font-size: clamp(1.9rem, 4vw, 3.4rem);
-    }
-    .consegna-text h2 em {
-      color: var(--gold-light);
-      font-style: normal;
-    }
-    .consegna-text p {
-      color: rgba(255, 255, 255, .78);
-      font-size: .95rem;
-      margin-top: 10px;
-      max-width: 440px;
-      font-weight: 500;
-    }
-    .consegna-chips {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
-    .chip {
-      background: rgba(255, 255, 255, .13);
-      border: 1.5px solid rgba(255, 255, 255, .22);
-      border-radius: var(--r);
-      padding: 16px 22px;
-      text-align: center;
-      min-width: 120px;
-      backdrop-filter: blur(4px);
-    }
-    .chip-ico {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-    }
-    .chip-val {
-      font-family: var(--font-head);
-      font-size: 1.3rem;
-      color: #fff;
-      line-height: 1;
-    }
-    .chip-val em {
-      color: var(--gold-light);
-      font-style: normal;
-    }
-    .chip-lbl {
-      font-size: .65rem;
-      font-weight: 800;
-      color: rgba(255, 255, 255, .6);
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      margin-top: 3px;
-    }
+    .consegna-text h2 { color: #fff; font-size: clamp(1.9rem, 4vw, 3.4rem); }
+    .consegna-text h2 em { color: var(--gold-light); font-style: normal; }
+    .consegna-text p { color: rgba(255, 255, 255, .78); font-size: .95rem; margin-top: 10px; max-width: 440px; }
+    .consegna-chips { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
+    .chip { background: rgba(255, 255, 255, .13); border: 1.5px solid rgba(255, 255, 255, .22); border-radius: var(--r); padding: 14px 20px; text-align: center; }
+    .chip-ico { font-size: 1.4rem; }
+    .chip-val { font-family: var(--font-head); font-size: 1.25rem; color: #fff; }
+    .chip-lbl { font-size: .62rem; font-weight: 800; color: rgba(255, 255, 255, .6); text-transform: uppercase; }
     .btn-white {
-      background: #fff;
-      color: var(--red);
-      padding: 14px 30px;
-      border-radius: 99px;
-      font-size: .88rem;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      box-shadow: 0 6px 22px rgba(0, 0, 0, .18);
-      transition: all .25s;
-      margin-top: 20px;
-    }
-    .btn-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .22);
+      background: #fff; color: var(--red); padding: 14px 30px; border-radius: 99px;
+      font-size: .88rem; font-weight: 800; display: inline-flex; align-items: center; gap: 7px; margin-top: 20px;
     }
 
-    /* ── RECENSIONI ───────────────────────────────── */
+    /* RECENSIONI */
     #recensioni { background: var(--white); }
-    .rev-top {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 24px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-    .rev-score-big {
-      font-family: var(--font-head);
-      font-size: 5rem;
-      color: var(--red);
-      line-height: 1;
-    }
-    .rev-meta {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      padding-bottom: 8px;
-    }
-    .rev-stars-row {
-      color: #f59e0b;
-      font-size: 1.2rem;
-    }
-    .rev-meta span {
-      font-size: .75rem;
-      color: var(--text-dim);
-      font-weight: 600;
-    }
-    .rgrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-      gap: 18px;
-    }
-    .rcard {
-      background: var(--beige);
-      border: 1.5px solid var(--border);
-      border-radius: var(--rl);
-      padding: 26px;
-      transition: all .3s var(--ease);
-    }
-    .rcard:hover {
-      border-color: var(--red);
-      transform: translateY(-4px);
-      box-shadow: 0 10px 30px var(--shadow-md);
-    }
-    .rcard-stars {
-      color: #f59e0b;
-      font-size: .9rem;
-      margin-bottom: 12px;
-    }
-    .rcard-text {
-      font-family: var(--font-logo);
-      font-size: 1.02rem;
-      color: var(--text);
-      line-height: 1.62;
-      margin-bottom: 20px;
-    }
-    .reviewer {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-    }
-    .rev-av {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--beige-2), var(--beige));
-      border: 2px solid var(--border-2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.15rem;
-    }
-    .rev-name {
-      font-size: .85rem;
-      font-weight: 800;
-      color: var(--text);
-    }
-    .rev-src {
-      font-size: .7rem;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
+    .rev-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px; flex-wrap: wrap; }
+    .rev-score-big { font-family: var(--font-head); font-size: 5rem; color: var(--red); line-height: 1; }
+    .rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 18px; }
+    .rcard { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--rl); padding: 26px; }
+    .rcard-stars { color: #f59e0b; margin-bottom: 12px; }
+    .rcard-text { font-family: var(--font-logo); font-size: 1.05rem; color: var(--text); line-height: 1.6; margin-bottom: 16px; }
+    .reviewer { display: flex; align-items: center; gap: 11px; }
+    .rev-av { width: 40px; height: 40px; border-radius: 50%; background: var(--white); border: 2px solid var(--border-2); display: flex; align-items: center; justify-content: center; font-weight: 800; }
 
-    /* ── CONTATTI ─────────────────────────────────── */
+    /* CONTATTI */
     #contatti { background: var(--beige); }
-    .cg {
-      display: grid;
-      grid-template-columns: 1fr 1.15fr;
-      gap: clamp(36px, 6vw, 70px);
-      align-items: start;
-    }
-    .info-blk { margin-bottom: 30px; }
-    .info-blk h3 {
-      font-size: .68rem;
-      font-weight: 800;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .info-blk h3::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border-2);
-    }
-    .info-row {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding: 9px 0;
-      border-bottom: 1px solid var(--border);
-      font-size: .88rem;
-      color: var(--text-mid);
-      font-weight: 600;
-    }
-    .info-row:last-child { border: none; }
-    .info-row .ic {
-      width: 20px;
-      text-align: center;
-      color: var(--red);
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-    .info-row a { transition: color .2s; }
-    .info-row a:hover { color: var(--red); }
-    
-    .hr-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 7px 0;
-      border-bottom: 1px solid var(--border);
-      font-size: .86rem;
-      font-weight: 600;
-      color: var(--text-mid);
-    }
-    .hr-row:last-child { border: none; }
-    .hr-row .day {
-      color: var(--text);
-      font-weight: 800;
-    }
-    .hr-row .closed {
-      color: var(--text-muted);
-      font-style: italic;
-    }
-    .hr-row .open {
-      color: var(--green);
-      font-weight: 800;
-    }
+    .cg { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(36px, 6vw, 70px); }
+    .info-blk { margin-bottom: 24px; }
+    .info-blk h3 { font-size: .7rem; font-weight: 800; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+    .info-row { display: flex; align-items: center; gap: 11px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .9rem; }
+    .hr-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: .88rem; }
     .map-box {
-      border-radius: var(--rl);
-      border: 2px solid var(--border-2);
-      aspect-ratio: 4/3;
-      overflow: hidden;
-      background: linear-gradient(145deg, var(--beige), var(--beige-2));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      box-shadow: 0 8px 30px var(--shadow-md);
-      font-size: .88rem;
-      color: var(--text-mid);
+      border-radius: var(--rl); border: 2px solid var(--border-2); aspect-ratio: 4/3;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: var(--white);
     }
-    .map-box .map-emo { font-size: 2.8rem; }
-    .map-box strong {
-      font-size: .95rem;
-      color: var(--text);
-      font-weight: 800;
-    }
-    .map-box a {
-      color: var(--red);
-      font-weight: 800;
-      border-bottom: 1px solid var(--border-2);
-      padding-bottom: 2px;
-    }
-    .map-box a:hover { border-color: var(--red); }
+    .map-box .map-emo { font-size: 2.5rem; }
 
-    /* ── NEWSLETTER ───────────────────────────────── */
-    .nl-sec {
-      background: linear-gradient(145deg, var(--gold-pale) 0%, var(--beige) 100%);
-      border-top: 2px solid rgba(212, 160, 23, .2);
-      border-bottom: 2px solid rgba(212, 160, 23, .2);
-      padding: 60px 5vw;
-      text-align: center;
-    }
-    .nl-sec h2 { font-size: clamp(1.8rem, 3.5vw, 3rem); }
-    .nl-sec p {
-      font-size: .93rem;
-      color: var(--text-mid);
-      margin-top: 8px;
-      font-weight: 500;
-    }
-    .nl-form {
-      display: flex;
-      gap: 9px;
-      max-width: 440px;
-      margin: 26px auto 0;
-    }
-    .nl-form input {
-      flex: 1;
-      background: var(--white);
-      border: 2px solid rgba(212, 160, 23, .25);
-      border-radius: 99px;
-      padding: 12px 20px;
-      font-size: .86rem;
-      font-family: var(--font-body);
-      color: var(--text);
-      font-weight: 600;
-      outline: none;
-      transition: border-color .25s;
-    }
-    .nl-form input::placeholder { color: var(--text-muted); }
-    .nl-form input:focus { border-color: var(--gold); }
-    .nl-form button {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 99px;
-      font-size: .85rem;
-      font-weight: 800;
-      font-family: var(--font-body);
-      white-space: nowrap;
-      transition: all .25s;
-      box-shadow: 0 4px 14px rgba(212, 160, 23, .3);
-    }
-    .nl-form button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(212, 160, 23, .45);
-    }
-
-    /* ── FOOTER ───────────────────────────────────── */
-    footer {
-      background: #180e06;
-      color: rgba(255, 255, 255, .55);
-      padding: 40px 5vw;
-      font-size: .82rem;
-      font-weight: 600;
-    }
-    .ft-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .ft-logo {
-      font-family: var(--font-logo);
-      font-size: 1.4rem;
-      color: #fff;
-    }
-    .ft-logo em {
-      color: var(--red);
-      font-style: normal;
-    }
-    .ft-links {
-      display: flex;
-      gap: 20px;
-    }
-    .ft-links a:hover { color: #fff; }
+    /* FOOTER */
+    footer { background: #180e06; color: rgba(255, 255, 255, .55); padding: 40px 5vw; font-size: .82rem; }
+    .ft-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .ft-logo { font-family: var(--font-logo); font-size: 1.4rem; color: #fff; }
+    .ft-logo em { color: var(--red); font-style: normal; }
+    .ft-links { display: flex; gap: 20px; }
     
     .wa {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: #25d366;
-      color: white;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 4px 16px rgba(37, 211, 102, .35);
-      z-index: 180;
-      transition: all .28s var(--ease);
-    }
-    .wa:hover {
-      transform: scale(1.08) translateY(-2px);
-      box-shadow: 0 8px 24px rgba(37, 211, 102, .45);
+      position: fixed; bottom: 24px; right: 24px; background: #25d366; color: white;
+      width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 28px; box-shadow: 0 4px 16px rgba(37, 211, 102, .35); z-index: 180;
     }
 
     @media (max-width: 900px) {
       .hamburger { display: flex; }
-      .nav-links, .btn-order { display: none; }
-      .hero-inner, .chi-grid, .cg {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
-      }
-      .hero-eyebrow, .hero-btns, .hero-trust, .stag { justify-content: center; }
+      .nav-links { display: none; }
+      .hero-inner, .chi-grid, .cg { grid-template-columns: 1fr; text-align: center; }
       .hero-visual { order: -1; }
-      .chi-text .pullquote {
-        border-left: none;
-        border-top: 2px solid var(--gold);
-        border-bottom: 2px solid var(--gold);
-        padding: 14px 0;
-      }
-      .lgrid2 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -1396,15 +726,13 @@
       <a href="#recensioni">Recensioni</a>
       <a href="#contatti">Contatti</a>
     </nav>
-    <button class="hamburger" id="hbtn" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="hamburger" id="hbtn" aria-label="Menu">
+      <span></span><span></span><span></span>
     </button>
   </header>
 
   <div class="mob-nav" id="mobNav">
-    <button class="mob-close" id="mobClose">&times;</button>
+    <button class="mob-close" id="mobClose">×</button>
     <a href="#chi-siamo" onclick="cM()">Chi Siamo</a>
     <a href="#menu" onclick="cM()">Il Menu</a>
     <a href="#consegna" onclick="cM()">Domicilio</a>
@@ -1415,10 +743,9 @@
   <main>
     <section class="hero">
       <div class="hero-deco-1"></div>
-      <div class="hero-deco-2"></div>
       <div class="hero-inner">
         <div>
-          <div class="hero-eyebrow">🍕 Pizza &amp; Kebab Artigianale</div>
+          <div class="hero-eyebrow">🍕 Pizza & Kebab Artigianale</div>
           <h1>A Casa di <span class="red">Lara</span></h1>
           <p class="hero-desc">Scopri il gusto unico di 88 pizze artigianali e kebab di qualità a Borsano, Busto Arsizio. Pronte per l'asporto o consegnate a casa tua calde in 15-30 minuti!</p>
           <div class="hero-btns">
@@ -1456,16 +783,15 @@
           <div class="chi-text">
             <div class="stag">La Nostra Storia</div>
             <h2>Passione per la Pizza, <em>dal Forno a Casa Tua</em></h2>
-            <div class="pullquote">"Prepariamo ogni impasto con cura artigianale, lasciandolo lievitare lentamente per garantirti leggerezza e fragranza."</div>
-            <p>La Pizzeria "A Casa di Lara" a Borsano (Busto Arsizio) è il punto di riferimento per chi cerca una pizza ricca, digeribile e saporita, unita alla comodità di un servizio a domicilio impeccabile e puntuale.</p>
+            <div class="pullquote">"Prepariamo ogni impasto con cura artigianale, lasciandolo lievitare lentamente per garantirti leggerezza."</div>
+            <p>La Pizzeria "A Casa di Lara" a Borsano è il punto di riferimento per chi cerca una pizza ricca, digeribile e saporita, unita a un servizio a domicilio veloce.</p>
             <div class="pillars">
-              <div class="pillar"><div class="pillar-ico">🌾</div><h3>Alta Digeribilità</h3><p>Farine selezionate e lunghe lievitazioni.</p></div>
-              <div class="pillar"><div class="pillar-ico">🍅</div><h3>Ingredienti Top</h3><p>Solo materie prime fresche ogni giorno.</p></div>
+              <div class="pillar"><div class="pillar-ico">🌾</div><p>Farine selezionate e lunghe lievitazioni.</p></div>
+              <div class="pillar"><div class="pillar-ico">🍅</div><p>Solo materie prime fresche ogni giorno.</p></div>
             </div>
           </div>
           <div class="chi-visual">
             <div class="chi-badge-1"><div class="b-n">100%</div><div class="b-l">Artigianale</div></div>
-            <div class="chi-badge-2"><div class="b-n">★ 4.5</div><div class="b-l">Valutazione</div></div>
             <div class="chi-img-box">
               <img src="logo.png" alt="La nostra pizzeria" style="width: 100%; height: 100%; object-fit: cover;" />
             </div>
@@ -1480,47 +806,140 @@
           <div class="stag">Le Nostre Specialità</div>
           <h2>Esplora il <em>Nostro Menu</em></h2>
           <div class="tabs">
-            <button class="tab on" data-t="pizze">Le Nostre Pizze</button>
-            <button class="tab" data-t="kebab">Kebab &amp; Sfiziosità</button>
+            <button class="tab on" data-t="pizze-classiche">Pizze Classiche</button>
+            <button class="tab" data-t="pizze-speciali">Le Speciali di Lara</button>
+            <button class="tab" data-t="pizze-bianche">Pizze Bianche</button>
+            <button class="tab" data-t="calzoni">Calzoni</button>
+            <button class="tab" data-t="kebab-sfizi">Kebab & Sfiziosità</button>
           </div>
         </div>
 
-        <div class="panel on" id="pizze">
-          <p class="mnote">* Scegli tra ben 88 varianti differenti! Di seguito alcune delle più amate:</p>
-          <div class="msec-title">Le Classiche &amp; Speciali</div>
+        <div class="panel on" id="pizze-classiche">
+          <div class="msec-title">Le Pizze Tradizionali Italiane</div>
           <div class="pgrid">
             <div class="pcard">
-              <span class="pcard-sig">Top</span>
-              <div class="pcard-top"><div class="pcard-emo">🍕</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 5.50</span></div></div>
-              <div class="pcard-body"><h3>Margherita</h3><p class="desc">Pomodoro biologico, mozzarella fior di latte, basilico fresco, olio EVO.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+              <span class="pcard-sig">Popolare</span>
+              <div class="pcard-top"><div class="pcard-emo">🍕</div><div class="pcard-price"><span class="amt">€ 5.50</span></div></div>
+              <div class="pcard-body"><h3>Margherita</h3><p class="desc">Pomodoro biologico, mozzarella fior di latte, basilico fresco, olio EVO.</p><span class="allergen">Glutine, Lattosio</span></div>
             </div>
             <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🌶️</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 7.00</span></div></div>
-              <div class="pcard-body"><h3>Diavola</h3><p class="desc">Pomodoro, mozzarella, salame piccante calabrese di alta qualità.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+              <div class="pcard-top"><div class="pcard-emo">🌶️</div><div class="pcard-price"><span class="amt">€ 7.00</span></div></div>
+              <div class="pcard-body"><h3>Diavola</h3><p class="desc">Pomodoro, mozzarella fior di latte, salame piccante calabrese.</p><span class="allergen">Glutine, Lattosio</span></div>
             </div>
             <div class="pcard">
-              <span class="pcard-sig">Special</span>
-              <div class="pcard-top"><div class="pcard-emo">🏡</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 8.50</span></div></div>
-              <div class="pcard-body"><h3>Pizza Lara</h3><p class="desc">La nostra specialità con ingredienti selezionati della casa.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+              <div class="pcard-top"><div class="pcard-emo">🍄</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
+              <div class="pcard-body"><h3>Capricciosa</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🧀</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
+              <div class="pcard-body"><h3>Quattro Formaggi</h3><p class="desc">Pomodoro, mozzarella, gorgonzola DOP, fontina, scamorza affumicata.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🐟</div><div class="pcard-price"><span class="amt">€ 6.50</span></div></div>
+              <div class="pcard-body"><h3>Napoli</h3><p class="desc">Pomodoro, mozzarella fior di latte, acciughe, origano siciliano.</p><span class="allergen">Glutine, Lattosio, Pesce</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🌿</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
+              <div class="pcard-body"><h3>Vegetariana</h3><p class="desc">Pomodoro, mozzarella, zucchine, melanzane e peperoni alla griglia.</p><span class="allergen">Glutine, Lattosio</span></div>
             </div>
           </div>
         </div>
 
-        <div class="panel" id="kebab">
-          <div class="msec-title">Kebab Artigianale &amp; Piadine</div>
+        <div class="panel" id="pizze-speciali">
+          <div class="msec-title">Le Creazioni Esclusive di Lara</div>
+          <div class="pgrid">
+            <div class="pcard">
+              <span class="pcard-sig">Della Casa</span>
+              <div class="pcard-top"><div class="pcard-emo">🏡</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
+              <div class="pcard-body"><h3>Pizza Lara</h3><p class="desc">Pomodoro, mozzarella, porcini, zola, salame piccante e scaglie di grana.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <span class="pcard-sig">Borsano Top</span>
+              <div class="pcard-top"><div class="pcard-emo">🥓</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
+              <div class="pcard-body"><h3>Tirolese</h3><p class="desc">Pomodoro, mozzarella fior di latte, speck del Tirolo, porcini, olio al tartufo.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">👑</div><div class="pcard-price"><span class="amt">€ 9.00</span></div></div>
+              <div class="pcard-body"><h3>Regina</h3><p class="desc">Pomodoro, mozzarella di bufala campana DOP, pomodorini ciliegino, crudo di Parma.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🍖</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
+              <div class="pcard-body"><h3>Boscaiola Speciale</h3><p class="desc">Pomodoro, mozzarella, salsiccia fresca, funghi chiodini, panna artigianale.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="pizze-bianche">
+          <div class="msec-title">Pizze Delicate Senza Pomodoro</div>
+          <div class="pgrid">
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🌱</div><div class="pcard-price"><span class="amt">€ 8.00</span></div></div>
+              <div class="pcard-body"><h3>Primavera</h3><p class="desc">Base mozzarella, all'uscita: bresaola della Valtellina, rucola, scaglie di grana.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🐖</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
+              <div class="pcard-body"><h3>Delicata</h3><p class="desc">Base mozzarella, stracciatella di bufala fresca, mortadella IGP, granella di pistacchio.</p><span class="allergen">Glutine, Lattosio, Frutta a guscio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🥔</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
+              <div class="pcard-body"><h3>Campagnola</h3><p class="desc">Base mozzarella, patate al forno aromatizzate, salsiccia fresca, rosmarino.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="calzoni">
+          <div class="msec-title">I Nostri Calzoni Ripieni Sfornati sul Momento</div>
+          <div class="pgrid">
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🥟</div><div class="pcard-price"><span class="amt">€ 7.00</span></div></div>
+              <div class="pcard-body"><h3>Calzone Classico</h3><p class="desc">Ripieno di pomodoro, mozzarella fior di latte, prosciutto cotto nostrano.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🔥</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
+              <div class="pcard-body"><h3>Calzone Farcito</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, funghi champignon, carciofi.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+            <div class="pcard">
+              <span class="pcard-sig">Piccante</span>
+              <div class="pcard-top"><div class="pcard-emo">🌋</div><div class="pcard-price"><span class="amt">€ 8.00</span></div></div>
+              <div class="pcard-body"><h3>Calzone lara-style</h3><p class="desc">Mozzarella, salame piccante, gorgonzola DOP e peperoncino fresco.</p><span class="allergen">Glutine, Lattosio</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="kebab-sfizi">
+          <div class="msec-title">Kebab di Qualità e Fritti Sfiziosi</div>
           <div class="llist">
             <div class="litem">
-              <div class="litem-ico">🌯</div>
-              <div class="litem-body"><h3>Piadina Kebab Big</h3><p>Carne di kebab assortita, insalata, pomodoro, cipolla, salsa yogurt e salsa piccante.</p><small>Disponibile anche in versione Menu con patatine e bibita.</small></div>
+              <div class="litem-main">
+                <div class="litem-ico">🌯</div>
+                <div class="litem-body"><h3>Piadina Kebab Completa</h3><p>Carne kebab, insalata, pomodoro, cipolla, salsa yogurt, salsa piccante.</p></div>
+              </div>
               <div class="litem-price">€ 6.50</div>
             </div>
             <div class="litem">
-              <div class="litem-ico">🍔</div>
-              <div class="litem-body"><h3>Panino Kebab</h3><p>Pane artigianale sfornato al momento riempito con kebab e salse a scelta.</p></div>
+              <div class="litem-main">
+                <div class="litem-ico">🍔</div>
+                <div class="litem-body"><h3>Panino Kebab</h3><p>Pane artigianale caldo, carne kebab tenera, verdure fresche e salse a scelta.</p></div>
+              </div>
               <div class="litem-price">€ 6.00</div>
+            </div>
+            <div class="litem">
+              <div class="litem-main">
+                <div class="litem-ico">🍟</div>
+                <div class="litem-body"><h3>Patatine Fritte</h3><p>Porzione abbondante di patatine dorate e croccanti servite con salse.</p></div>
+              </div>
+              <div class="litem-price">€ 3.50</div>
+            </div>
+            <div class="litem">
+              <div class="litem-main">
+                <div class="litem-ico">🍗</div>
+                <div class="litem-body"><h3>Nuggets di Pollo (6 pz)</h3><p>Croccanti pepite di pollo fritto, ideali come sfizio pre-pizza.</p></div>
+              </div>
+              <div class="litem-price">€ 4.50</div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -1528,7 +947,7 @@
       <div class="consegna-inner">
         <div class="consegna-text">
           <h2>Il Gusto Arriva <em>Direttamente a Casa Tua</em></h2>
-          <p>Consegniamo a Borsano e in tutta Busto Arsizio. Garantiamo pizze calde e fragranti grazie ai nostri contenitori termici professionali di ultima generazione.</p>
+          <p>Consegniamo a Borsano e in tutta Busto Arsizio. Garantiamo pizze calde e fragranti grazie ai nostri contenitori termici professionali.</p>
           <div class="consegna-chips">
             <div class="chip"><div class="chip-ico">⏰</div><div class="chip-val">15-30<em>m</em></div><div class="chip-lbl">Media Consegna</div></div>
             <div class="chip"><div class="chip-ico">🚗</div><div class="chip-val">Gratis</div><div class="chip-lbl">Sopra i 15€</div></div>
@@ -1542,18 +961,18 @@
       <div class="si">
         <div class="rev-top">
           <div><div class="stag">Dicono di Noi</div><h2>Cosa dicono i <em>Nostri Clienti</em></h2></div>
-          <div style="display: flex; gap: 18px; align-items: center;"><div class="rev-score-big">4.5</div><div class="rev-meta"><div class="rev-stars-row">★★★★★</div><span>Su oltre 690 recensioni</span></div></div>
+          <div style="display: flex; gap: 18px; align-items: center;"><div class="rev-score-big">4.5</div><div><div style="color:#f59e0b;">★★★★★</div><span>690+ Recensioni</span></div></div>
         </div>
         <div class="rgrid">
           <div class="rcard">
             <div class="rcard-stars">★★★★★</div>
-            <div class="rcard-text">"La pizza è eccezionale, l'impasto è leggerissimo e gli ingredienti sono sempre freschi. Il kebab in piadina è il migliore della zona!"</div>
-            <div class="reviewer"><div class="rev-av">M</div><div><div class="rev-name">Marco R.</div><div class="rev-src">Recensione Google</div></div></div>
+            <div class="rcard-text">"La pizza è eccezionale, l'impasto è leggerissimo. Il kebab in piadina è il migliore di Busto Arsizio!"</div>
+            <div class="reviewer"><div class="rev-av">M</div><div><div class="rev-name">Marco R.</div><span>Google Maps</span></div></div>
           </div>
           <div class="rcard">
             <div class="rcard-stars">★★★★★</div>
-            <div class="rcard-text">"Servizio a domicilio ultra veloce, le pizze arrivano sempre fumanti. Personale gentilissimo ed efficiente. Consigliatissimo!"</div>
-            <div class="reviewer"><div class="rev-av">S</div><div><div class="rev-name">Sara L.</div><div class="rev-src">Recensione JustEat</div></div></div>
+            <div class="rcard-text">"Servizio a domicilio ultra veloce, le pizze arrivano sempre fumanti. Personale super gentile."</div>
+            <div class="reviewer"><div class="rev-av">S</div><div><div class="rev-name">Sara L.</div><span>JustEat</span></div></div>
           </div>
         </div>
       </div>
@@ -1564,17 +983,17 @@
         <div class="cg">
           <div>
             <div class="stag">Informazioni</div>
-            <h2>Vieni a Trovarci o <em>Contattaci</em></h2>
+            <h2>Contattaci o <em>Ordina Subito</em></h2>
             <div style="margin-top: 24px;">
               <div class="info-blk">
-                <h3>Contatti &amp; Ordini</h3>
-                <div class="info-row"><span class="ic">☎</span><a href="tel:+390331000000">+39 0331 000000</a></div>
-                <div class="info-row"><span class="ic">📱</span><a href="https://wa.me/3900000000">Invia un messaggio WhatsApp</a></div>
+                <h3>Contatti & Ordini</h3>
+                <div class="info-row">☎ <a href="tel:+390331000000">+39 0331 000000</a></div>
+                <div class="info-row">📱 <a href="https://wa.me/3900000000">Invia un messaggio WhatsApp</a></div>
               </div>
               <div class="info-blk">
                 <h3>Orari di Apertura</h3>
-                <div class="hr-row"><span class="day">Lunedì</span><span class="closed">Chiuso</span></div>
-                <div class="hr-row"><span class="day">Martedì - Domenica</span><span class="open">18:30 - 22:30</span></div>
+                <div class="hr-row"><span>Lunedì</span><span style="color:var(--text-muted); font-style:italic;">Chiuso</span></div>
+                <div class="hr-row"><span>Martedì - Domenica</span><span style="color:var(--green); font-weight:800;">18:30 - 22:30</span></div>
               </div>
             </div>
           </div>
@@ -1582,20 +1001,11 @@
             <div class="map-emo">📍</div>
             <strong>Pizzeria A Casa di Lara</strong>
             <p>Via [Da Inserire], Borsano - Busto Arsizio (VA)</p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Apri in Google Maps</a>
+            <a href="http://maps.google.com/?q=Pizzeria+A+Casa+di+Lara+Busto+Arsizio" target="_blank" rel="noopener noreferrer">Apri in Google Maps</a>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="nl-sec">
-      <h2>Ricevi Offerte <em>Speciali</em></h2>
-      <p>Iscriviti alla newsletter per ricevere sconti esclusivi dedicati ai clienti di Borsano e Busto Arsizio.</p>
-      <form class="nl-form" onsubmit="event.preventDefault(); alert('Grazie per l\'iscrizione!');">
-        <input type="email" placeholder="Il tuo indirizzo email" required aria-label="Email per newsletter" />
-        <button type="submit">Iscriviti</button>
-      </form>
-    </div>
   </main>
 
   <footer>
@@ -1606,11 +1016,11 @@
         <a href="#menu">Menu</a>
         <a href="#contatti">Contatti</a>
       </div>
-      <div>&copy; 2026 Pizzeria A Casa di Lara. Tutti i diritti riservati.</div>
+      <div>© 2026 Pizzeria A Casa di Lara. Tutti i diritti riservati.</div>
     </div>
   </footer>
 
-  <a href="https://wa.me/3900000000" class="wa" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">💬</a>
+  <a href="https://wa.me/3900000000" class="wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
 
   <script>
     const hdr = document.getElementById('hdr');
@@ -1623,39 +1033,23 @@
 
     hbtn.addEventListener('click', () => {
       mob.classList.add('open');
-      hbtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     });
 
     function cM() {
       mob.classList.remove('open');
-      hbtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     }
-    
     document.getElementById('mobClose').addEventListener('click', cM);
 
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('on');
-          obs.unobserve(e.target);
-        }
-      });
-    }, {
-      threshold: 0.08,
-      rootMargin: '0px 0px -24px 0px'
-    });
-
-    document.querySelectorAll('.rv, .rl, .rr').forEach(el => obs.observe(el));
-
+    // Sistema di navigazione dei tab del Menu
     document.querySelectorAll('.tab').forEach(btn => {
       btn.addEventListener('click', () => {
-        const t = btn.dataset.t;
+        const targetTab = btn.dataset.t;
         document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
         btn.classList.add('on');
         document.querySelectorAll('.panel').forEach(p => {
-          if (p.id === t) {
+          if (p.id === targetTab) {
             p.classList.add('on');
           } else {
             p.classList.remove('on');
