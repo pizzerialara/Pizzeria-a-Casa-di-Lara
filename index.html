@@ -148,25 +148,161 @@
 .trust-pill .stars { color: #f59e0b; }
 
 /* Logo grande centrato */
-.hero-visual { display: flex; justify-content: center; align-items: center; opacity: 0; animation: fadeup .9s var(--ease) .4s forwards; }
-.logo-big-wrap { position: relative; width: min(420px, 80vw); height: min(420px, 80vw); display: flex; justify-content: center; align-items: center; }
-.logo-big-ring { position: absolute; inset: 0; border-radius: 50%; border: 2px dashed rgba(200,25,26,.15); animation: spin 40s linear infinite; }
-.logo-big-ring-2 { position: absolute; inset: 30px; border-radius: 50%; border: 1.5px dashed rgba(212,160,23,.2); animation: spin 25s linear infinite reverse; }
-.logo-big-ring-3 { position: absolute; inset: 60px; border-radius: 50%; border: 1px dotted rgba(200,25,26,.1); animation: spin 35s linear infinite; }
+/* Logo grande - NUOVO STILE per logo rettangolare */
+.hero-visual { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  opacity: 0; 
+  animation: fadeup .9s var(--ease) .4s forwards; 
+  position: relative;
+}
+
+.logo-big-wrap { 
+  position: relative; 
+  width: min(480px, 85vw); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
+}
 
 /* Glow effect dietro il logo */
-.logo-glow { position: absolute; inset: 40px; border-radius: 50%; background: radial-gradient(circle, rgba(200,25,26,.12) 0%, rgba(212,160,23,.08) 40%, transparent 70%); filter: blur(20px); animation: glow-pulse 4s ease-in-out infinite; }
-@keyframes glow-pulse { 0%, 100% { opacity: 0.6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
+.logo-glow { 
+  position: absolute; 
+  width: 90%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+  background: radial-gradient(ellipse, rgba(200,25,26,.15) 0%, rgba(212,160,23,.10) 40%, transparent 70%); 
+  filter: blur(30px); 
+  animation: glow-pulse 4s ease-in-out infinite;
+  z-index: 0;
+}
 
-.logo-big-img { position: absolute; width: calc(100% - 32px); height: calc(100% - 32px); top: 16px; left: 16px; border-radius: 50%; object-fit: cover; box-shadow: 0 20px 60px rgba(150,30,0,.22), 0 0 0 4px rgba(212,160,23,.25); animation: float 8s ease-in-out infinite; z-index: 2; }
+@keyframes glow-pulse { 
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); } 
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); } 
+}
 
-/* Icone orbitanti */
-.orbit-icons { position: absolute; inset: -20px; animation: spin 20s linear infinite; }
-.orbit-icon { position: absolute; font-size: 1.4rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,.15)); }
-.orbit-icon:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
-.orbit-icon:nth-child(2) { top: 50%; right: 0; transform: translateY(-50%); }
-.orbit-icon:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
-.orbit-icon:nth-child(4) { top: 50%; left: 0; transform: translateY(-50%); }
+/* Anelli decorativi ovali */
+.logo-big-ring { 
+  position: absolute; 
+  width: 110%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  border: 2px dashed rgba(200,25,26,.12); 
+  animation: spin-slow 50s linear infinite; 
+}
+
+.logo-big-ring-2 { 
+  position: absolute; 
+  width: 105%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 26px;
+  border: 1.5px dashed rgba(212,160,23,.15); 
+  animation: spin-slow 35s linear infinite reverse; 
+}
+
+.logo-big-ring-3 { 
+  display: none; /* Rimosso per pulizia visiva */
+}
+
+@keyframes spin-slow { 
+  to { transform: translate(-50%, -50%) rotate(360deg); } 
+}
+
+/* LOGO IMMAGINE - formato naturale */
+.logo-big-img { 
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  box-shadow: 
+    0 25px 60px rgba(150,30,0,.20), 
+    0 10px 30px rgba(0,0,0,.10),
+    0 0 0 3px rgba(212,160,23,.20),
+    0 0 80px rgba(200,25,26,.08);
+  animation: float-logo 6s ease-in-out infinite;
+  z-index: 2;
+  background: linear-gradient(145deg, #fff 0%, #fdf6ec 100%);
+  padding: 8px;
+}
+
+@keyframes float-logo { 
+  0%, 100% { transform: translateY(0) rotate(0deg); } 
+  30% { transform: translateY(-12px) rotate(0.8deg); } 
+  60% { transform: translateY(-6px) rotate(-0.5deg); } 
+}
+
+/* Icone orbitanti - riposizionate */
+.orbit-icons { 
+  position: absolute; 
+  width: 115%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit-spin 25s linear infinite; 
+  pointer-events: none;
+}
+
+.orbit-icon { 
+  position: absolute; 
+  font-size: 1.6rem; 
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,.15));
+  background: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+}
+
+.orbit-icon:nth-child(1) { top: -8%; left: 50%; transform: translateX(-50%); }
+.orbit-icon:nth-child(2) { top: 50%; right: -6%; transform: translateY(-50%); }
+.orbit-icon:nth-child(3) { bottom: -8%; left: 50%; transform: translateX(-50%); }
+.orbit-icon:nth-child(4) { top: 50%; left: -6%; transform: translateY(-50%); }
+
+@keyframes orbit-spin { 
+  to { transform: translate(-50%, -50%) rotate(360deg); } 
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .logo-big-wrap {
+    width: min(400px, 90vw);
+  }
+  .logo-big-img {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo-big-wrap {
+    width: 95vw;
+  }
+  .logo-big-img {
+    max-width: 280px;
+    border-radius: 16px;
+  }
+  .orbit-icons {
+    display: none;
+  }
+}
+
 
 @keyframes spin { to { transform: rotate(360deg); } }
 @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 40% { transform: translateY(-14px) rotate(1.5deg); } 70% { transform: translateY(-6px) rotate(-.8deg); } }
@@ -688,24 +824,24 @@
         <div class="trust-pill">💶 Min. €12,00</div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="logo-big-wrap">
-        <div class="logo-big-ring"></div>
-        <div class="logo-big-ring-2"></div>
-        <div class="logo-big-ring-3"></div>
-        <div class="logo-glow"></div>
-        
-        <!-- Icone orbitanti -->
-        <div class="orbit-icons">
-          <span class="orbit-icon">🍕</span>
-          <span class="orbit-icon">🧀</span>
-          <span class="orbit-icon">🍅</span>
-          <span class="orbit-icon">🌿</span>
-        </div>
-        
-        <img src="logo.png" alt="Pizzeria A Casa di Lara" class="logo-big-img" width="388" height="388" loading="eager" />
-      </div>
+   <div class="hero-visual">
+  <div class="logo-big-wrap">
+    <div class="logo-glow"></div>
+    <div class="logo-big-ring"></div>
+    <div class="logo-big-ring-2"></div>
+    
+    <!-- Icone orbitanti -->
+    <div class="orbit-icons">
+      <span class="orbit-icon">🍕</span>
+      <span class="orbit-icon">🧀</span>
+      <span class="orbit-icon">🍅</span>
+      <span class="orbit-icon">🌿</span>
     </div>
+    
+    <img src="logo.png" alt="Pizzeria A Casa di Lara" class="logo-big-img" width="1536" height="1024" loading="eager" />
+  </div>
+</div>
+
   </div>
 </section>
 
