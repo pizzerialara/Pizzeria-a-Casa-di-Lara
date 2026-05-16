@@ -411,6 +411,166 @@
       .filter-row { flex-direction: column; gap: 6px; }
       .filter-label { padding-top: 0; min-width: unset; }
     }
+    /* ═══ OFFERTA MERCOLEDÌ ═══ */
+.offer-wed {
+  background: linear-gradient(135deg, #fffbe8 0%, #fff5d6 50%, #fff9e8 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
+}
+.offer-wed::before {
+  content: '🍕';
+  position: absolute;
+  font-size: clamp(8rem, 20vw, 18rem);
+  right: -2%;
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg);
+  opacity: 0.08;
+  pointer-events: none;
+}
+.offer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 70px) 5vw;
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 50px);
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.offer-badge {
+  background: var(--gold);
+  color: #fff;
+  width: clamp(100px, 18vw, 140px);
+  height: clamp(100px, 18vw, 140px);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(212, 160, 23, 0.4);
+  flex-shrink: 0;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+@keyframes pulse-badge {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.offer-badge .day {
+  font-size: clamp(0.6rem, 1.2vw, 0.75rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+.offer-badge .price {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+  margin: 2px 0;
+}
+.offer-badge .unit {
+  font-size: clamp(0.55rem, 1vw, 0.65rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+.offer-content {
+  flex: 1;
+  min-width: 260px;
+}
+.offer-content .offer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 160, 23, 0.15);
+  border: 1.5px solid rgba(212, 160, 23, 0.35);
+  border-radius: 99px;
+  padding: 5px 14px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.offer-content h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.offer-content h2 .gold { color: var(--gold); }
+.offer-content h2 .red { color: var(--red); }
+.offer-content p {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  color: var(--text-mid);
+  line-height: 1.7;
+  max-width: 480px;
+  font-weight: 500;
+}
+.offer-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.offer-cond {
+  background: var(--white);
+  border: 1.5px solid var(--border-2);
+  border-radius: var(--r);
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-mid);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.offer-cond .cond-ico {
+  font-size: 1.1rem;
+}
+.offer-cta {
+  flex-shrink: 0;
+}
+.offer-cta .btn-gold {
+  background: var(--gold);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 99px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 22px rgba(212, 160, 23, 0.38);
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+.offer-cta .btn-gold:hover {
+  background: #b8900f;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 160, 23, 0.5);
+}
+
+@media (max-width: 700px) {
+  .offer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .offer-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .offer-conditions {
+    justify-content: center;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -490,6 +650,31 @@
         <div class="strip-stat rv d4"><div class="strip-n">€2</div><div class="strip-l">Commissione Consegna</div></div>
       </div>
     </div>
+
+    <!-- OFFERTA MERCOLEDÌ -->
+<section class="offer-wed">
+  <div class="offer-inner">
+    <div class="offer-badge rv">
+      <span class="day">Mercoledì</span>
+      <span class="price">€6</span>
+      <span class="unit">tutte le pizze</span>
+    </div>
+    <div class="offer-content">
+      <div class="offer-tag rv d1">🔥 Offerta Settimanale</div>
+      <h2 class="rv d2">Ogni mercoledì sera<br><span class="gold">tutte le pizze</span> a <span class="red">€6</span></h2>
+      <p class="rv d3">Il mercoledì è il giorno della pizza! Passa in pizzeria e porta a casa qualsiasi pizza del menu a soli 6€. Margherita, Quattro Formaggi, Diavola… scegli tu!</p>
+      <div class="offer-conditions rv d4">
+        <div class="offer-cond"><span class="cond-ico">🏠</span> Solo ritiro in pizzeria</div>
+        <div class="offer-cond"><span class="cond-ico">🌙</span> Valido la sera</div>
+        <div class="offer-cond"><span class="cond-ico">🚫</span> Escluse pizze kebab</div>
+      </div>
+    </div>
+    <div class="offer-cta rv d5">
+      <a href="tel:+390331342199" class="btn-gold">📞 Prenota ora</a>
+    </div>
+  </div>
+</section>
+
 
     <!-- CHI SIAMO -->
     <section id="chi-siamo">
