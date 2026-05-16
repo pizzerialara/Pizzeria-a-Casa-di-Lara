@@ -11,7 +11,7 @@
   <meta property="og:title" content="Pizzeria A Casa di Lara – Borsano, Busto Arsizio" />
   <meta property="og:description" content="88 pizze, kebab, calzoni. Consegna a domicilio 15-30 min. Borsano di Busto Arsizio." />
   <meta property="og:type" content="restaurant" />
-  <meta property="og:image" content="https://www.pizzeriacasadilara.it/og-image.jpg" />
+  <meta property="og:image" content="logo.png" />
   <meta name="theme-color" content="#c8191a" />
 
   <script type="application/ld+json">
@@ -361,7 +361,6 @@
       align-items: center;
       padding-top: 80px;
     }
-    /* red swoosh bottom */
     .hero::after {
       content: '';
       position: absolute;
@@ -373,7 +372,6 @@
       clip-path: ellipse(55% 100% at 50% 100%);
       z-index: 0;
     }
-    /* decorative circles */
     .hero-deco-1 {
       position: absolute;
       width: 520px;
@@ -507,7 +505,6 @@
     }
     .trust-pill .stars { color: #f59e0b; }
 
-    /* hero visual */
     .hero-visual {
       display: flex;
       justify-content: center;
@@ -700,12 +697,6 @@
       font-size: 1.5rem;
       margin-bottom: 7px;
     }
-    .pillar h3 {
-      font-family: var(--font-head);
-      font-size: 1rem;
-      color: var(--text);
-      margin-bottom: 3px;
-    }
     .pillar p {
       font-size: .75rem;
       color: var(--text-dim);
@@ -722,7 +713,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 5rem;
       position: relative;
       box-shadow: 0 12px 40px var(--shadow-md);
     }
@@ -831,7 +821,6 @@
       background: linear-gradient(to right, var(--border-2), transparent);
     }
 
-    /* Pizza grid */
     .pgrid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
@@ -913,7 +902,6 @@
       border-radius: 99px;
     }
 
-    /* List items */
     .llist {
       display: flex;
       flex-direction: column;
@@ -1352,7 +1340,6 @@
     }
     .ft-links a:hover { color: #fff; }
     
-    /* WhatsApp Floating Action Button */
     .wa {
       position: fixed;
       bottom: 24px;
@@ -1375,7 +1362,6 @@
       box-shadow: 0 8px 24px rgba(37, 211, 102, .45);
     }
 
-    /* ── RESPONSIVE ───────────────────────────────── */
     @media (max-width: 900px) {
       .hamburger { display: flex; }
       .nav-links, .btn-order { display: none; }
@@ -1400,6 +1386,7 @@
 
   <header id="hdr">
     <div class="logo-wrap">
+      <img src="logo.png" alt="Logo Pizzeria A Casa di Lara" class="logo-img" />
       <div class="logo-name">A Casa di Lara</div>
     </div>
     <nav class="nav-links">
@@ -1426,7 +1413,190 @@
   </div>
 
   <main>
-    </main>
+    <section class="hero">
+      <div class="hero-deco-1"></div>
+      <div class="hero-deco-2"></div>
+      <div class="hero-inner">
+        <div>
+          <div class="hero-eyebrow">🍕 Pizza &amp; Kebab Artigianale</div>
+          <h1>A Casa di <span class="red">Lara</span></h1>
+          <p class="hero-desc">Scopri il gusto unico di 88 pizze artigianali e kebab di qualità a Borsano, Busto Arsizio. Pronte per l'asporto o consegnate a casa tua calde in 15-30 minuti!</p>
+          <div class="hero-btns">
+            <a href="#menu" class="btn-red">Consulta il Menu</a>
+            <a href="tel:+390331000000" class="btn-ghost">Chiama Ora</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-pill"><span class="stars">★★★★★</span> 4.5 su Google</div>
+            <div class="trust-pill">⚡ Consegna Rapida</div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="logo-big-wrap">
+            <div class="logo-big-ring"></div>
+            <div class="logo-big-ring-2"></div>
+            <img src="logo.png" alt="Pizzeria Lara Busto Arsizio" class="logo-big-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="red-strip">
+      <div class="strip-inner">
+        <div class="strip-stat"><div class="strip-n">88</div><div class="strip-l">Varietà di Pizze</div></div>
+        <div class="strip-sep"></div>
+        <div class="strip-stat"><div class="strip-n">15-30<em>m</em></div><div class="strip-l">Tempo di Consegna</div></div>
+        <div class="strip-sep"></div>
+        <div class="strip-stat"><div class="strip-n">4.5</div><div class="strip-l">690+ Recensioni</div></div>
+      </div>
+    </div>
+
+    <section id="chi-siamo">
+      <div class="si">
+        <div class="chi-grid">
+          <div class="chi-text">
+            <div class="stag">La Nostra Storia</div>
+            <h2>Passione per la Pizza, <em>dal Forno a Casa Tua</em></h2>
+            <div class="pullquote">"Prepariamo ogni impasto con cura artigianale, lasciandolo lievitare lentamente per garantirti leggerezza e fragranza."</div>
+            <p>La Pizzeria "A Casa di Lara" a Borsano (Busto Arsizio) è il punto di riferimento per chi cerca una pizza ricca, digeribile e saporita, unita alla comodità di un servizio a domicilio impeccabile e puntuale.</p>
+            <div class="pillars">
+              <div class="pillar"><div class="pillar-ico">🌾</div><h3>Alta Digeribilità</h3><p>Farine selezionate e lunghe lievitazioni.</p></div>
+              <div class="pillar"><div class="pillar-ico">🍅</div><h3>Ingredienti Top</h3><p>Solo materie prime fresche ogni giorno.</p></div>
+            </div>
+          </div>
+          <div class="chi-visual">
+            <div class="chi-badge-1"><div class="b-n">100%</div><div class="b-l">Artigianale</div></div>
+            <div class="chi-badge-2"><div class="b-n">★ 4.5</div><div class="b-l">Valutazione</div></div>
+            <div class="chi-img-box">
+              <img src="logo.png" alt="La nostra pizzeria" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="si">
+        <div class="menu-hd">
+          <div class="stag">Le Nostre Specialità</div>
+          <h2>Esplora il <em>Nostro Menu</em></h2>
+          <div class="tabs">
+            <button class="tab on" data-t="pizze">Le Nostre Pizze</button>
+            <button class="tab" data-t="kebab">Kebab &amp; Sfiziosità</button>
+          </div>
+        </div>
+
+        <div class="panel on" id="pizze">
+          <p class="mnote">* Scegli tra ben 88 varianti differenti! Di seguito alcune delle più amate:</p>
+          <div class="msec-title">Le Classiche &amp; Speciali</div>
+          <div class="pgrid">
+            <div class="pcard">
+              <span class="pcard-sig">Top</span>
+              <div class="pcard-top"><div class="pcard-emo">🍕</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 5.50</span></div></div>
+              <div class="pcard-body"><h3>Margherita</h3><p class="desc">Pomodoro biologico, mozzarella fior di latte, basilico fresco, olio EVO.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+            </div>
+            <div class="pcard">
+              <div class="pcard-top"><div class="pcard-emo">🌶️</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 7.00</span></div></div>
+              <div class="pcard-body"><h3>Diavola</h3><p class="desc">Pomodoro, mozzarella, salame piccante calabrese di alta qualità.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+            </div>
+            <div class="pcard">
+              <span class="pcard-sig">Special</span>
+              <div class="pcard-top"><div class="pcard-emo">🏡</div><div class="pcard-price"><span class="from">da</span><span class="amt">€ 8.50</span></div></div>
+              <div class="pcard-body"><h3>Pizza Lara</h3><p class="desc">La nostra specialità con ingredienti selezionati della casa.</p><span class="allergen">Contiene: <strong>Glutine, Lattosio</strong></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="kebab">
+          <div class="msec-title">Kebab Artigianale &amp; Piadine</div>
+          <div class="llist">
+            <div class="litem">
+              <div class="litem-ico">🌯</div>
+              <div class="litem-body"><h3>Piadina Kebab Big</h3><p>Carne di kebab assortita, insalata, pomodoro, cipolla, salsa yogurt e salsa piccante.</p><small>Disponibile anche in versione Menu con patatine e bibita.</small></div>
+              <div class="litem-price">€ 6.50</div>
+            </div>
+            <div class="litem">
+              <div class="litem-ico">🍔</div>
+              <div class="litem-body"><h3>Panino Kebab</h3><p>Pane artigianale sfornato al momento riempito con kebab e salse a scelta.</p></div>
+              <div class="litem-price">€ 6.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consegna">
+      <div class="consegna-inner">
+        <div class="consegna-text">
+          <h2>Il Gusto Arriva <em>Direttamente a Casa Tua</em></h2>
+          <p>Consegniamo a Borsano e in tutta Busto Arsizio. Garantiamo pizze calde e fragranti grazie ai nostri contenitori termici professionali di ultima generazione.</p>
+          <div class="consegna-chips">
+            <div class="chip"><div class="chip-ico">⏰</div><div class="chip-val">15-30<em>m</em></div><div class="chip-lbl">Media Consegna</div></div>
+            <div class="chip"><div class="chip-ico">🚗</div><div class="chip-val">Gratis</div><div class="chip-lbl">Sopra i 15€</div></div>
+          </div>
+          <a href="https://www.justeat.it/" target="_blank" rel="noopener noreferrer" class="btn-white">Ordina Online su JustEat</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="recensioni">
+      <div class="si">
+        <div class="rev-top">
+          <div><div class="stag">Dicono di Noi</div><h2>Cosa dicono i <em>Nostri Clienti</em></h2></div>
+          <div style="display: flex; gap: 18px; align-items: center;"><div class="rev-score-big">4.5</div><div class="rev-meta"><div class="rev-stars-row">★★★★★</div><span>Su oltre 690 recensioni</span></div></div>
+        </div>
+        <div class="rgrid">
+          <div class="rcard">
+            <div class="rcard-stars">★★★★★</div>
+            <div class="rcard-text">"La pizza è eccezionale, l'impasto è leggerissimo e gli ingredienti sono sempre freschi. Il kebab in piadina è il migliore della zona!"</div>
+            <div class="reviewer"><div class="rev-av">M</div><div><div class="rev-name">Marco R.</div><div class="rev-src">Recensione Google</div></div></div>
+          </div>
+          <div class="rcard">
+            <div class="rcard-stars">★★★★★</div>
+            <div class="rcard-text">"Servizio a domicilio ultra veloce, le pizze arrivano sempre fumanti. Personale gentilissimo ed efficiente. Consigliatissimo!"</div>
+            <div class="reviewer"><div class="rev-av">S</div><div><div class="rev-name">Sara L.</div><div class="rev-src">Recensione JustEat</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti">
+      <div class="si">
+        <div class="cg">
+          <div>
+            <div class="stag">Informazioni</div>
+            <h2>Vieni a Trovarci o <em>Contattaci</em></h2>
+            <div style="margin-top: 24px;">
+              <div class="info-blk">
+                <h3>Contatti &amp; Ordini</h3>
+                <div class="info-row"><span class="ic">☎</span><a href="tel:+390331000000">+39 0331 000000</a></div>
+                <div class="info-row"><span class="ic">📱</span><a href="https://wa.me/3900000000">Invia un messaggio WhatsApp</a></div>
+              </div>
+              <div class="info-blk">
+                <h3>Orari di Apertura</h3>
+                <div class="hr-row"><span class="day">Lunedì</span><span class="closed">Chiuso</span></div>
+                <div class="hr-row"><span class="day">Martedì - Domenica</span><span class="open">18:30 - 22:30</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="map-box">
+            <div class="map-emo">📍</div>
+            <strong>Pizzeria A Casa di Lara</strong>
+            <p>Via [Da Inserire], Borsano - Busto Arsizio (VA)</p>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Apri in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nl-sec">
+      <h2>Ricevi Offerte <em>Speciali</em></h2>
+      <p>Iscriviti alla newsletter per ricevere sconti esclusivi dedicati ai clienti di Borsano e Busto Arsizio.</p>
+      <form class="nl-form" onsubmit="event.preventDefault(); alert('Grazie per l\'iscrizione!');">
+        <input type="email" placeholder="Il tuo indirizzo email" required aria-label="Email per newsletter" />
+        <button type="submit">Iscriviti</button>
+      </form>
+    </div>
+  </main>
 
   <footer>
     <div class="ft-inner">
@@ -1443,13 +1613,11 @@
   <a href="https://wa.me/3900000000" class="wa" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">💬</a>
 
   <script>
-    // Header Sticky logic on scroll
     const hdr = document.getElementById('hdr');
     window.addEventListener('scroll', () => {
       hdr.classList.toggle('stuck', window.scrollY > 50);
     }, { passive: true });
 
-    // Mobile Navigation Drawer logic
     const mob = document.getElementById('mobNav');
     const hbtn = document.getElementById('hbtn');
 
@@ -1467,7 +1635,6 @@
     
     document.getElementById('mobClose').addEventListener('click', cM);
 
-    // Scroll Reveal Animation Engine (Intersection Observer)
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -1482,16 +1649,11 @@
 
     document.querySelectorAll('.rv, .rl, .rr').forEach(el => obs.observe(el));
 
-    // Menu Tabs Navigation logic
     document.querySelectorAll('.tab').forEach(btn => {
       btn.addEventListener('click', () => {
         const t = btn.dataset.t;
-        
-        // Disattiva tutte le tab ed attiva quella corrente
         document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
         btn.classList.add('on');
-        
-        // Mostra il pannello corrispondente e nascondi gli altri
         document.querySelectorAll('.panel').forEach(p => {
           if (p.id === t) {
             p.classList.add('on');
