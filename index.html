@@ -7,60 +7,10 @@
   <meta name="description" content="Pizzeria A Casa di Lara a Borsano, Busto Arsizio: 88 pizze artigianali, kebab, calzoni. Consegna domicilio 15-30 min. ☎ Ordina ora!" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.pizzeriacasadilara.it/" />
-
   <meta property="og:title" content="Pizzeria A Casa di Lara – Borsano, Busto Arsizio" />
   <meta property="og:description" content="88 pizze, kebab, calzoni. Consegna a domicilio 15-30 min. Borsano di Busto Arsizio." />
   <meta property="og:type" content="restaurant" />
-  <meta property="og:image" content="logo.png" />
   <meta name="theme-color" content="#c8191a" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "@id": "https://www.pizzeriacasadilara.it/#restaurant",
-    "name": "Pizzeria A Casa di Lara",
-    "description": "Pizzeria artigianale a Borsano di Busto Arsizio con 88 pizze, kebab e consegna a domicilio. Valutazione 4.5 su 690+ recensioni.",
-    "url": "https://pizzerialara.github.io/Pizzeria-a-Casa-di-Lara/",
-    "telephone": "+39 0331 342199",
-    "priceRange": "€€",
-    "servesCuisine": ["Pizza", "Kebab", "Italiana"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Piazza Pietro Toselli, 4B",
-      "addressLocality": "Borsano",
-      "addressRegion": "Busto Arsizio",
-      "postalCode": "21052",
-      "addressCountry": "IT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.6127,
-      "longitude": 8.8536
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": " 11:00",
-        "closes": "14:30"
-        "opens": " 17:30",
-        "closes": "22:30"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.5",
-      "reviewCount": "690",
-      "bestRating": "5"
-    },
-    "menu": "https://www.pizzeriacasadilara.it/#menu",
-    "potentialAction": {
-      "@type": "OrderAction",
-      "target": "https://www.justeat.it/restaurants-pizzeria-a-casa-di-lara"
-    }
-  }
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,7 +21,7 @@
       --red: #c8191a;
       --red-dark: #a01010;
       --red-light: #e02020;
-      --red-soft: rgba(200, 25, 26, 0.09);
+      --red-soft: rgba(200,25,26,0.09);
       --gold: #d4a017;
       --gold-light: #f0c040;
       --gold-pale: #fffbe8;
@@ -85,923 +35,1192 @@
       --text-mid: #4a3520;
       --text-dim: #7a6050;
       --text-muted: #b09880;
-      --border: rgba(200, 25, 26, 0.10);
-      --border-2: rgba(200, 25, 26, 0.20);
-      --shadow: rgba(150, 30, 0, 0.10);
-      --shadow-md: rgba(150, 30, 0, 0.16);
+      --border: rgba(200,25,26,0.10);
+      --border-2: rgba(200,25,26,0.20);
+      --shadow: rgba(150,30,0,0.10);
+      --shadow-md: rgba(150,30,0,0.16);
       --font-logo: 'Lobster', cursive;
       --font-head: 'Fredoka One', cursive;
       --font-body: 'Nunito', sans-serif;
       --r: 14px;
       --rl: 22px;
-      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease: cubic-bezier(0.22,1,0.36,1);
     }
 
-    *, ::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    body {
-      background: var(--beige);
-      color: var(--text);
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-    
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    
-    ul {
-      list-style: none;
-    }
-    
-    button {
-      cursor: pointer;
-      font-family: var(--font-body);
-      border: none;
-      background: none;
-    }
-    
-    address {
-      font-style: normal;
-    }
-    
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-    ::-webkit-scrollbar-track {
-      background: var(--beige);
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--red);
-      border-radius: 99px;
-    }
+    *, ::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body { background: var(--beige); color: var(--text); font-family: var(--font-body); font-size: 16px; line-height: 1.65; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; font-family: var(--font-body); border: none; background: none; }
+    address { font-style: normal; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--beige); }
+    ::-webkit-scrollbar-thumb { background: var(--red); border-radius: 99px; }
 
     body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 9999;
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       opacity: 0.025;
     }
 
+    /* REVEAL */
+    .rv { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .rv.on { opacity: 1; transform: none; }
+    .d1 { transition-delay: .08s; } .d2 { transition-delay: .16s; } .d3 { transition-delay: .24s; }
+    .d4 { transition-delay: .32s; } .d5 { transition-delay: .40s; }
+
     /* HEADER */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 200;
-      padding: 14px 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: all .4s var(--ease);
-    }
-    header.stuck {
-      background: rgba(253, 246, 236, .95);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 2px solid var(--border-2);
-      box-shadow: 0 4px 24px var(--shadow);
-      padding: 10px 5vw;
-    }
-    .logo-wrap {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo-img {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--gold);
-      box-shadow: 0 3px 14px var(--shadow-md);
-      transition: transform .3s;
-    }
-    .logo-img:hover {
-      transform: rotate(-4deg) scale(1.05);
-    }
-    .logo-name {
-      font-family: var(--font-logo);
-      font-size: 1.55rem;
-      color: var(--red);
-      line-height: 1;
-      letter-spacing: .01em;
-      text-shadow: 1px 1px 0 rgba(255, 255, 255, .6);
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: clamp(14px, 2.5vw, 34px);
-    }
-    .nav-links a {
-      font-size: .82rem;
-      font-weight: 700;
-      color: var(--text-mid);
-      position: relative;
-      transition: color .2s;
-      padding-bottom: 2px;
-    }
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--red);
-      border-radius: 2px;
-      transition: width .3s var(--ease);
-    }
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 14px 5vw; display: flex; align-items: center; justify-content: space-between; transition: all .4s var(--ease); }
+    header.stuck { background: rgba(253,246,236,.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 2px solid var(--border-2); box-shadow: 0 4px 24px var(--shadow); padding: 10px 5vw; }
+    .logo-wrap { display: flex; align-items: center; gap: 10px; }
+    .logo-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); box-shadow: 0 3px 14px var(--shadow-md); transition: transform .3s; }
+    .logo-img:hover { transform: rotate(-4deg) scale(1.05); }
+    .logo-name { font-family: var(--font-logo); font-size: 1.55rem; color: var(--red); line-height: 1; letter-spacing: .01em; text-shadow: 1px 1px 0 rgba(255,255,255,.6); }
+    .logo-sub { font-size: .65rem; font-weight: 700; color: var(--gold); letter-spacing: .14em; text-transform: uppercase; margin-top: 1px; }
+    .nav-links { display: flex; align-items: center; gap: clamp(14px,2.5vw,34px); }
+    .nav-links a { font-size: .82rem; font-weight: 700; color: var(--text-mid); position: relative; transition: color .2s; padding-bottom: 2px; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--red); border-radius: 2px; transition: width .3s var(--ease); }
     .nav-links a:hover { color: var(--red); }
     .nav-links a:hover::after { width: 100%; }
-    
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      padding: 4px;
-    }
-    .hamburger span {
-      width: 23px;
-      height: 2px;
-      background: var(--text);
-      border-radius: 2px;
-      transition: all .3s;
-    }
+    .btn-order { background: var(--red); color: #fff; padding: 9px 22px; border-radius: 99px; font-size: .8rem; font-weight: 800; box-shadow: 0 4px 16px rgba(200,25,26,.35); transition: all .25s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+    .btn-order:hover { background: var(--red-dark); transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { width: 23px; height: 2px; background: var(--text); border-radius: 2px; transition: all .3s; }
 
     /* MOBILE NAV */
-    .mob-nav {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(253, 246, 236, .97);
-      backdrop-filter: blur(20px);
-      z-index: 190;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-    }
+    .mob-nav { display: none; position: fixed; inset: 0; background: rgba(253,246,236,.97); backdrop-filter: blur(20px); z-index: 190; flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
     .mob-nav.open { display: flex; }
-    .mob-nav a {
-      font-family: var(--font-head);
-      font-size: clamp(1.9rem, 6vw, 3rem);
-      color: var(--text-mid);
-      transition: color .2s;
-    }
+    .mob-nav a { font-family: var(--font-head); font-size: clamp(1.9rem,6vw,3rem); color: var(--text-mid); transition: color .2s; }
     .mob-nav a:hover { color: var(--red); }
-    .mob-close {
-      position: absolute;
-      top: 22px;
-      right: 5vw;
-      font-size: 2rem;
-      color: var(--text-dim);
-    }
+    .mob-close { position: absolute; top: 22px; right: 5vw; font-size: 2rem; color: var(--text-dim); }
 
     /* HERO */
-    .hero {
-      min-height: 100svh;
-      background: linear-gradient(155deg, #fff5e0 0%, #fdf0d5 30%, #fff8f0 60%, #fef9f0 100%);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      padding-top: 80px;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 80px;
-      background: var(--red);
-      clip-path: ellipse(55% 100% at 50% 100%);
-      z-index: 0;
-    }
-    .hero-deco-1 {
-      position: absolute;
-      width: 520px;
-      height: 520px;
-      border-radius: 50%;
-      top: -120px;
-      right: -100px;
-      background: radial-gradient(circle, rgba(212, 160, 23, .13) 0%, transparent 70%);
-      border: 2px dashed rgba(212, 160, 23, .18);
-    }
-    .hero-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
-      padding: clamp(50px, 8vw, 100px) 5vw clamp(90px, 12vw, 130px);
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 50px;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(212, 160, 23, .15);
-      border: 1.5px solid rgba(212, 160, 23, .3);
-      border-radius: 99px;
-      padding: 5px 14px;
-      font-size: .72rem;
-      font-weight: 800;
-      color: var(--gold);
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-    .hero h1 {
-      font-family: var(--font-head);
-      font-size: clamp(2.6rem, 5.5vw, 5rem);
-      color: var(--text);
-      line-height: 1.1;
-      margin-bottom: 18px;
-    }
+    .hero { min-height: 100svh; background: linear-gradient(155deg, #fff5e0 0%, #fdf0d5 30%, #fff8f0 60%, #fef9f0 100%); position: relative; overflow: hidden; display: flex; align-items: center; padding-top: 80px; }
+    .hero::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 80px; background: var(--red); clip-path: ellipse(55% 100% at 50% 100%); z-index: 0; }
+    .hero-deco-1 { position: absolute; width: 520px; height: 520px; border-radius: 50%; top: -120px; right: -100px; background: radial-gradient(circle, rgba(212,160,23,.13) 0%, transparent 70%); border: 2px dashed rgba(212,160,23,.18); }
+    .hero-deco-2 { position: absolute; width: 300px; height: 300px; border-radius: 50%; bottom: 60px; left: -80px; background: radial-gradient(circle, rgba(200,25,26,.07) 0%, transparent 70%); border: 1.5px dashed rgba(200,25,26,.12); }
+    .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; padding: clamp(50px,8vw,100px) 5vw clamp(90px,12vw,130px); display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: center; position: relative; z-index: 1; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; background: rgba(212,160,23,.15); border: 1.5px solid rgba(212,160,23,.3); border-radius: 99px; padding: 5px 14px; font-size: .72rem; font-weight: 800; color: var(--gold); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 18px; opacity: 0; animation: fadeup .6s var(--ease) .2s forwards; }
+    .hero h1 { font-family: var(--font-head); font-size: clamp(2.6rem,5.5vw,5rem); color: var(--text); line-height: 1.1; margin-bottom: 18px; opacity: 0; animation: fadeup .7s var(--ease) .35s forwards; }
     .hero h1 .red { color: var(--red); }
-    .hero-desc {
-      font-size: clamp(.95rem, 1.3vw, 1.1rem);
-      color: var(--text-mid);
-      line-height: 1.75;
-      margin-bottom: 32px;
-      font-weight: 500;
-    }
-    .hero-btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .btn-red {
-      background: var(--red);
-      color: #fff;
-      padding: 14px 30px;
-      border-radius: 99px;
-      font-size: .9rem;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 6px 22px rgba(200, 25, 26, .38);
-      transition: all .28s;
-    }
-    .btn-red:hover {
-      background: var(--red-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(200, 25, 26, .48);
-    }
-    .btn-ghost {
-      background: transparent;
-      color: var(--red);
-      padding: 13px 28px;
-      border-radius: 99px;
-      font-size: .9rem;
-      font-weight: 800;
-      border: 2px solid var(--border-2);
-      transition: all .25s;
-    }
-    .btn-ghost:hover {
-      background: var(--red-soft);
-      border-color: var(--red);
-    }
-    .hero-trust {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 24px;
-      flex-wrap: wrap;
-    }
-    .trust-pill {
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: 99px;
-      padding: 5px 13px;
-      font-size: .75rem;
-      font-weight: 700;
-      color: var(--text-mid);
-      box-shadow: 0 2px 8px var(--shadow);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
+    .hero h1 .gold { color: var(--gold); }
+    .hero-desc { font-size: clamp(.95rem,1.3vw,1.1rem); color: var(--text-mid); line-height: 1.75; margin-bottom: 32px; font-weight: 500; opacity: 0; animation: fadeup .7s var(--ease) .5s forwards; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; opacity: 0; animation: fadeup .7s var(--ease) .65s forwards; }
+    .btn-red { background: var(--red); color: #fff; padding: 14px 30px; border-radius: 99px; font-size: .9rem; font-weight: 800; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 6px 22px rgba(200,25,26,.38); transition: all .28s; }
+    .btn-red:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 10px 30px rgba(200,25,26,.48); }
+    .btn-ghost { background: transparent; color: var(--red); padding: 13px 28px; border-radius: 99px; font-size: .9rem; font-weight: 800; border: 2px solid var(--border-2); transition: all .25s; }
+    .btn-ghost:hover { background: var(--red-soft); border-color: var(--red); }
+    .hero-trust { display: flex; align-items: center; gap: 10px; margin-top: 24px; flex-wrap: wrap; opacity: 0; animation: fadeup .7s var(--ease) .8s forwards; }
+    .trust-pill { background: var(--white); border: 1.5px solid var(--border); border-radius: 99px; padding: 5px 13px; font-size: .75rem; font-weight: 700; color: var(--text-mid); box-shadow: 0 2px 8px var(--shadow); display: flex; align-items: center; gap: 5px; }
     .trust-pill .stars { color: #f59e0b; }
-
-    .hero-visual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo-big-wrap {
-      position: relative;
-      width: min(380px, 85vw);
-      height: min(380px, 85vw);
-    }
-    .logo-big-ring {
-      position: absolute;
-      inset: 0;
-      border-radius: 50%;
-      border: 2px dashed rgba(200, 25, 26, .15);
-      animation: spin 40s linear infinite;
-    }
-    .logo-big-ring-2 {
-      position: absolute;
-      inset: 25px;
-      border-radius: 50%;
-      border: 1.5px dashed rgba(212, 160, 23, .2);
-      animation: spin 25s linear infinite reverse;
-    }
-    .logo-big-img {
-      position: absolute;
-      inset: 14px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 20px 60px rgba(150, 30, 0, .22), 0 0 0 4px rgba(212, 160, 23, .25);
-      animation: float 8s ease-in-out infinite;
-    }
-    
+    .hero-visual { display: flex; justify-content: center; align-items: center; opacity: 0; animation: fadeup .9s var(--ease) .4s forwards; }
+    .logo-big-wrap { position: relative; width: min(420px,90vw); height: min(420px,90vw); }
+    .logo-big-ring { position: absolute; inset: 0; border-radius: 50%; border: 2px dashed rgba(200,25,26,.15); animation: spin 40s linear infinite; }
+    .logo-big-ring-2 { position: absolute; inset: 30px; border-radius: 50%; border: 1.5px dashed rgba(212,160,23,.2); animation: spin 25s linear infinite reverse; }
+    .logo-big-img { position: absolute; inset: 16px; border-radius: 50%; object-fit: cover; box-shadow: 0 20px 60px rgba(150,30,0,.22), 0 0 0 4px rgba(212,160,23,.25); animation: float 8s ease-in-out infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(0deg); }
-      40% { transform: translateY(-14px) rotate(1.5deg); }
-      70% { transform: translateY(-6px) rotate(-.8deg); }
-    }
+    @keyframes float { 0%,100% { transform: translateY(0) rotate(0deg); } 40% { transform: translateY(-14px) rotate(1.5deg); } 70% { transform: translateY(-6px) rotate(-.8deg); } }
+    @keyframes fadeup { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
     /* RED STRIP */
-    .red-strip {
-      background: var(--red);
-      position: relative;
-      z-index: 1;
-    }
-    .strip-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 26px 5vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: clamp(22px, 5vw, 70px);
-      flex-wrap: wrap;
-    }
+    .red-strip { background: var(--red); position: relative; z-index: 1; }
+    .strip-inner { max-width: 1200px; margin: 0 auto; padding: 26px 5vw; display: flex; justify-content: center; align-items: center; gap: clamp(22px,5vw,70px); flex-wrap: wrap; }
     .strip-stat { text-align: center; color: #fff; }
-    .strip-n {
-      font-family: var(--font-head);
-      font-size: clamp(2rem, 3.5vw, 3rem);
-      line-height: 1;
-    }
+    .strip-n { font-family: var(--font-head); font-size: clamp(2rem,3.5vw,3rem); line-height: 1; }
     .strip-n em { color: var(--gold-light); font-style: normal; }
-    .strip-l {
-      font-size: .68rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      opacity: .75;
-      margin-top: 3px;
-    }
-    .strip-sep { width: 1px; height: 48px; background: rgba(255, 255, 255, .2); }
+    .strip-l { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin-top: 3px; }
+    .strip-sep { width: 1px; height: 48px; background: rgba(255,255,255,.2); }
 
-    /* SECTIONS COMMON */
-    section { padding: clamp(64px, 9vw, 110px) 5vw; }
+    /* SECTIONS */
+    section { padding: clamp(64px,9vw,110px) 5vw; }
     .si { max-width: 1200px; margin: 0 auto; }
-    .stag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: .68rem;
-      font-weight: 800;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 10px;
-    }
-    .stag::before {
-      content: ''; width: 18px; height: 2px; background: var(--red); border-radius: 2px;
-    }
-    h2 { font-family: var(--font-head); font-size: clamp(2rem, 4.5vw, 3.5rem); color: var(--text); line-height: 1.1; }
+    .stag { display: inline-flex; align-items: center; gap: 8px; font-size: .68rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+    .stag::before { content: ''; width: 18px; height: 2px; background: var(--red); border-radius: 2px; }
+    h2 { font-family: var(--font-head); font-size: clamp(2rem,4.5vw,3.8rem); color: var(--text); line-height: 1.1; }
     h2 em { font-style: italic; color: var(--red); }
 
     /* CHI SIAMO */
     #chi-siamo { background: var(--white); position: relative; overflow: hidden; }
-    .chi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); align-items: center; }
-    .chi-text .pullquote {
-      font-family: var(--font-logo);
-      font-size: clamp(1.3rem, 2vw, 1.75rem);
-      color: var(--red-dark);
-      line-height: 1.4;
-      border-left: 4px solid var(--gold);
-      padding-left: 18px;
-      margin: 20px 0 22px;
-    }
+    #chi-siamo::before { content: 'Lara'; position: absolute; right: 3vw; bottom: -0.05em; font-family: var(--font-logo); font-size: clamp(6rem,18vw,18rem); color: rgba(200,25,26,.04); pointer-events: none; user-select: none; line-height: 1; }
+    .chi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px,6vw,80px); align-items: center; }
+    .chi-text .pullquote { font-family: var(--font-logo); font-size: clamp(1.3rem,2vw,1.75rem); color: var(--red-dark); line-height: 1.4; border-left: 4px solid var(--gold); padding-left: 18px; margin: 20px 0 22px; }
     .chi-text p { font-size: .93rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 16px; font-weight: 500; }
     .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
-    .pillar { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--r); padding: 18px; }
+    .pillar { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--r); padding: 18px; transition: all .3s var(--ease); }
+    .pillar:hover { border-color: var(--red); background: var(--red-soft); transform: translateY(-3px); box-shadow: 0 8px 28px var(--shadow); }
     .pillar-ico { font-size: 1.5rem; margin-bottom: 7px; }
+    .pillar h3 { font-family: var(--font-head); font-size: 1rem; color: var(--text); margin-bottom: 3px; }
     .pillar p { font-size: .75rem; color: var(--text-dim); line-height: 1.5; margin: 0; }
-    
     .chi-visual { position: relative; }
-    .chi-img-box {
-      border-radius: var(--rl);
-      overflow: hidden;
-      aspect-ratio: 4/5;
-      background: linear-gradient(145deg, var(--beige) 0%, var(--beige-2) 100%);
-      border: 2px solid var(--border-2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      box-shadow: 0 12px 40px var(--shadow-md);
-    }
-    .chi-badge-1 {
-      position: absolute;
-      bottom: 24px;
-      left: -18px;
-      background: var(--red);
-      color: #fff;
-      border-radius: var(--r);
-      padding: 14px 20px;
-      box-shadow: 0 8px 28px rgba(200, 25, 26, .38);
-      z-index: 2;
-    }
+    .chi-img-box { border-radius: var(--rl); overflow: hidden; aspect-ratio: 4/5; background: linear-gradient(145deg,var(--beige) 0%,var(--beige-2) 100%); border: 2px solid var(--border-2); display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 12px 40px var(--shadow-md); }
+    .chi-badge-1 { position: absolute; bottom: 24px; left: -18px; background: var(--red); color: #fff; border-radius: var(--r); padding: 14px 20px; box-shadow: 0 8px 28px rgba(200,25,26,.38); z-index: 2; }
     .chi-badge-1 .b-n { font-family: var(--font-head); font-size: 2rem; line-height: 1; }
     .chi-badge-1 .b-l { font-size: .65rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
+    .chi-badge-2 { position: absolute; top: 28px; right: -18px; background: var(--white); border: 2px solid var(--border-2); border-radius: var(--r); padding: 14px 18px; box-shadow: 0 8px 24px var(--shadow-md); z-index: 2; text-align: center; }
+    .chi-badge-2 .b-n { font-family: var(--font-head); font-size: 1.7rem; color: var(--gold); line-height: 1; }
+    .chi-badge-2 .b-l { font-size: .62rem; font-weight: 800; color: var(--text-dim); letter-spacing: .08em; text-transform: uppercase; }
 
-    /* MENU DESIGN */
+    /* ═══ MENU ═══ */
     #menu { background: var(--beige); }
     .menu-hd { margin-bottom: 30px; }
     .tabs { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
-    .tab {
-      padding: 9px 20px;
-      border-radius: 99px;
-      font-size: .8rem;
-      font-weight: 800;
-      border: 2px solid var(--border-2);
-      color: var(--text-dim);
-      background: var(--white);
-      transition: all .22s;
-    }
-    .tab.on {
-      background: var(--red);
-      border-color: var(--red);
-      color: #fff;
-      box-shadow: 0 4px 14px rgba(200, 25, 26, .32);
-    }
+    .tab { padding: 9px 20px; border-radius: 99px; font-size: .8rem; font-weight: 800; border: 2px solid var(--border-2); color: var(--text-dim); background: var(--white); transition: all .22s; }
+    .tab.on { background: var(--red); border-color: var(--red); color: #fff; box-shadow: 0 4px 14px rgba(200,25,26,.32); }
+    .tab:not(.on):hover { border-color: var(--red); color: var(--red); }
     .panel { display: none; }
     .panel.on { display: block; }
-    
-    .msec-title {
-      font-family: var(--font-head);
-      font-size: 1.3rem;
-      color: var(--red-dark);
-      margin: 40px 0 20px;
-      padding-bottom: 8px;
-      border-bottom: 3px solid var(--gold);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .pgrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
-      gap: 20px;
-    }
-    .pcard {
+    .mnote { font-size: .78rem; color: var(--text-muted); font-style: italic; margin-bottom: 20px; font-weight: 500; }
+    .msec-title { font-family: var(--font-head); font-size: 1.2rem; color: var(--text); margin: 32px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--border-2); display: flex; align-items: center; gap: 10px; }
+    .msec-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--border-2), transparent); }
+
+    /* ── FILTRI INTELLIGENTI ── */
+    .filter-bar {
       background: var(--white);
-      border: 1.5px solid var(--border);
+      border: 2px solid var(--border-2);
       border-radius: var(--rl);
-      overflow: hidden;
-      transition: all .32s var(--ease);
-      position: relative;
+      padding: 20px 22px;
+      margin-bottom: 28px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-    }
-    .pcard:hover {
-      border-color: var(--red);
-      transform: translateY(-5px);
-      box-shadow: 0 14px 40px var(--shadow-md);
-    }
-    .pcard-top {
-      background: linear-gradient(135deg, var(--beige) 0%, var(--beige-2) 100%);
-      padding: 18px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    .pcard-emo { font-size: 2.2rem; line-height: 1; }
-    .pcard-price { text-align: right; }
-    .pcard-price .amt { font-family: var(--font-head); font-size: 1.3rem; color: var(--red); }
-    .pcard-body { padding: 16px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-    .pcard-body h3 { font-family: var(--font-head); font-size: 1.15rem; color: var(--text); margin-bottom: 6px; }
-    .pcard-body .desc { font-size: .82rem; color: var(--text-dim); line-height: 1.5; margin-bottom: 12px; }
-    .allergen { background: var(--beige); border-radius: 6px; padding: 4px 8px; font-size: .68rem; color: var(--text-dim); }
-    .pcard-sig {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: var(--gold);
-      color: #fff;
-      font-size: .58rem;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 99px;
-      text-transform: uppercase;
-    }
-
-    /* KEBAB & SFIZIOSITA */
-    .llist { display: flex; flex-direction: column; gap: 12px; }
-    .litem {
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: var(--r);
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       gap: 16px;
     }
-    .litem-main { display: flex; align-items: center; gap: 14px; }
-    .litem-ico { font-size: 2rem; }
-    .litem-body h3 { font-family: var(--font-head); font-size: 1.1rem; color: var(--text); }
-    .litem-body p { font-size: .82rem; color: var(--text-dim); }
-    .litem-price { font-family: var(--font-head); font-size: 1.25rem; color: var(--red); white-space: nowrap; }
+    .filter-bar-title {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .filter-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .filter-label {
+      font-size: .7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      min-width: 80px;
+      padding-top: 7px;
+      flex-shrink: 0;
+    }
+    .filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .fchip {
+      padding: 5px 13px;
+      border-radius: 99px;
+      font-size: .74rem;
+      font-weight: 700;
+      border: 1.5px solid var(--border-2);
+      color: var(--text-dim);
+      background: var(--beige);
+      cursor: pointer;
+      transition: all .2s;
+      user-select: none;
+    }
+    .fchip:hover { border-color: var(--red); color: var(--red); }
+    .fchip.active { background: var(--red); border-color: var(--red); color: #fff; box-shadow: 0 3px 10px rgba(200,25,26,.28); }
+    .fchip.allergen-chip.active { background: #a01010; }
+    .fchip.sort-chip.active { background: var(--gold); border-color: var(--gold); }
 
-    /* CONSEGNA BANNER */
-    #consegna { background: var(--red); position: relative; overflow: hidden; padding: clamp(50px, 8vw, 90px) 5vw; }
-    .consegna-inner {
-      max-width: 1200px; margin: 0 auto; display: flex; align-items: center;
-      justify-content: space-between; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;
+    .filter-search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 200px;
     }
-    .consegna-text h2 { color: #fff; font-size: clamp(1.9rem, 4vw, 3.4rem); }
+    .filter-search {
+      width: 100%;
+      background: var(--beige);
+      border: 1.5px solid var(--border-2);
+      border-radius: 99px;
+      padding: 8px 16px 8px 36px;
+      font-size: .84rem;
+      font-family: var(--font-body);
+      color: var(--text);
+      font-weight: 600;
+      outline: none;
+      transition: border-color .25s;
+    }
+    .filter-search:focus { border-color: var(--red); }
+    .filter-search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: .85rem;
+      pointer-events: none;
+    }
+    .filter-results-count {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-results-count span { color: var(--red); font-size: .9rem; }
+    .filter-reset {
+      padding: 5px 14px;
+      border-radius: 99px;
+      font-size: .72rem;
+      font-weight: 800;
+      border: 1.5px solid var(--border-2);
+      color: var(--text-muted);
+      background: transparent;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .filter-reset:hover { border-color: var(--red); color: var(--red); }
+
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+      font-size: .93rem;
+    }
+    .no-results .nr-emo { font-size: 3rem; margin-bottom: 12px; }
+    .no-results h3 { font-family: var(--font-head); font-size: 1.3rem; color: var(--text-dim); margin-bottom: 6px; }
+
+    /* PIZZA GRID */
+    .pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px,100%),1fr)); gap: 16px; }
+    .pcard { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--rl); overflow: hidden; transition: all .32s var(--ease); position: relative; display: flex; flex-direction: column; }
+    .pcard:hover { border-color: var(--red); transform: translateY(-5px); box-shadow: 0 14px 40px var(--shadow-md); }
+    .pcard.hidden { display: none; }
+    .pcard-top { background: linear-gradient(135deg,var(--beige) 0%,var(--beige-2) 100%); padding: 20px 20px 12px; display: flex; align-items: flex-start; justify-content: space-between; }
+    .pcard-emo { font-size: 2.4rem; line-height: 1; }
+    .pcard-price { text-align: right; }
+    .pcard-price .from { display: block; font-size: .58rem; font-weight: 800; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; }
+    .pcard-price .amt { font-family: var(--font-head); font-size: 1.35rem; color: var(--red); }
+    .pcard-body { padding: 14px 18px 18px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .pcard-body h3 { font-family: var(--font-head); font-size: 1.15rem; color: var(--text); margin-bottom: 5px; }
+    .pcard-body .desc { font-size: .78rem; color: var(--text-dim); line-height: 1.55; margin-bottom: 10px; font-weight: 500; flex-grow: 1; }
+    .allergen { background: var(--beige); border-radius: 7px; padding: 5px 9px; font-size: .68rem; color: var(--text-muted); line-height: 1.4; font-weight: 600; }
+    .allergen strong { color: var(--red-dark); }
+    .pcard-sig { position: absolute; top: 10px; right: 10px; background: var(--gold); color: #fff; font-size: .6rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 99px; }
+
+    /* LIST ITEMS */
+    .llist { display: flex; flex-direction: column; gap: 10px; }
+    .litem { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--r); padding: 15px 20px; display: flex; align-items: flex-start; gap: 14px; transition: border-color .25s, box-shadow .25s; }
+    .litem:hover { border-color: var(--red); box-shadow: 0 4px 16px var(--shadow); }
+    .litem-ico { font-size: 1.7rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .litem-body { flex: 1; }
+    .litem-body h3 { font-family: var(--font-head); font-size: 1.05rem; color: var(--text); margin-bottom: 3px; }
+    .litem-body p { font-size: .78rem; color: var(--text-dim); line-height: 1.5; font-weight: 500; }
+    .litem-body small { font-size: .68rem; color: var(--text-muted); font-weight: 600; display: block; margin-top: 4px; }
+    .litem-price { font-family: var(--font-head); font-size: 1.2rem; color: var(--red); flex-shrink: 0; white-space: nowrap; margin-top: 2px; }
+    .lgrid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* CONSEGNA */
+    #consegna { background: var(--red); position: relative; overflow: hidden; padding: clamp(50px,8vw,90px) 5vw; }
+    #consegna::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; right: -15%; top: -60%; background: rgba(255,255,255,.05); }
+    #consegna::after { content: ''; position: absolute; width: 300px; height: 300px; border-radius: 50%; left: -8%; bottom: -50%; background: rgba(212,160,23,.12); }
+    .consegna-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1; }
+    .consegna-text h2 { color: #fff; font-size: clamp(1.9rem,4vw,3.4rem); }
     .consegna-text h2 em { color: var(--gold-light); font-style: normal; }
-    .consegna-text p { color: rgba(255, 255, 255, .78); font-size: .95rem; margin-top: 10px; max-width: 440px; }
-    .consegna-chips { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
-    .chip { background: rgba(255, 255, 255, .13); border: 1.5px solid rgba(255, 255, 255, .22); border-radius: var(--r); padding: 14px 20px; text-align: center; }
-    .chip-ico { font-size: 1.4rem; }
-    .chip-val { font-family: var(--font-head); font-size: 1.25rem; color: #fff; }
-    .chip-lbl { font-size: .62rem; font-weight: 800; color: rgba(255, 255, 255, .6); text-transform: uppercase; }
-    .btn-white {
-      background: #fff; color: var(--red); padding: 14px 30px; border-radius: 99px;
-      font-size: .88rem; font-weight: 800; display: inline-flex; align-items: center; gap: 7px; margin-top: 20px;
-    }
+    .consegna-text p { color: rgba(255,255,255,.78); font-size: .95rem; margin-top: 10px; max-width: 440px; font-weight: 500; }
+    .consegna-chips { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .chip { background: rgba(255,255,255,.13); border: 1.5px solid rgba(255,255,255,.22); border-radius: var(--r); padding: 16px 22px; text-align: center; min-width: 120px; }
+    .chip-ico { font-size: 1.5rem; margin-bottom: 5px; }
+    .chip-val { font-family: var(--font-head); font-size: 1.3rem; color: #fff; line-height: 1; }
+    .chip-val em { color: var(--gold-light); font-style: normal; }
+    .chip-lbl { font-size: .65rem; font-weight: 800; color: rgba(255,255,255,.6); letter-spacing: .1em; text-transform: uppercase; margin-top: 3px; }
+    .btn-white { background: #fff; color: var(--red); padding: 14px 30px; border-radius: 99px; font-size: .88rem; font-weight: 800; display: inline-flex; align-items: center; gap: 7px; box-shadow: 0 6px 22px rgba(0,0,0,.18); transition: all .25s; margin-top: 20px; }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.22); }
 
     /* RECENSIONI */
     #recensioni { background: var(--white); }
     .rev-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px; flex-wrap: wrap; }
     .rev-score-big { font-family: var(--font-head); font-size: 5rem; color: var(--red); line-height: 1; }
-    .rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 18px; }
-    .rcard { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--rl); padding: 26px; }
-    .rcard-stars { color: #f59e0b; margin-bottom: 12px; }
-    .rcard-text { font-family: var(--font-logo); font-size: 1.05rem; color: var(--text); line-height: 1.6; margin-bottom: 16px; }
+    .rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px,100%),1fr)); gap: 18px; }
+    .rcard { background: var(--beige); border: 1.5px solid var(--border); border-radius: var(--rl); padding: 26px; transition: all .3s var(--ease); }
+    .rcard:hover { border-color: var(--red); transform: translateY(-4px); box-shadow: 0 10px 30px var(--shadow-md); }
+    .rcard-stars { color: #f59e0b; font-size: .9rem; margin-bottom: 12px; }
+    .rcard-text { font-family: var(--font-logo); font-size: 1.02rem; color: var(--text); line-height: 1.62; margin-bottom: 20px; }
     .reviewer { display: flex; align-items: center; gap: 11px; }
-    .rev-av { width: 40px; height: 40px; border-radius: 50%; background: var(--white); border: 2px solid var(--border-2); display: flex; align-items: center; justify-content: center; font-weight: 800; }
+    .rev-av { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg,var(--beige-2),var(--beige)); border: 2px solid var(--border-2); display: flex; align-items: center; justify-content: center; font-size: 1.15rem; }
+    .rev-name { font-size: .85rem; font-weight: 800; color: var(--text); }
+    .rev-src { font-size: .7rem; color: var(--text-muted); font-weight: 600; }
 
     /* CONTATTI */
     #contatti { background: var(--beige); }
-    .cg { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(36px, 6vw, 70px); }
-    .info-blk { margin-bottom: 24px; }
-    .info-blk h3 { font-size: .7rem; font-weight: 800; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
-    .info-row { display: flex; align-items: center; gap: 11px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: .9rem; }
-    .hr-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: .88rem; }
-    .map-box {
-      border-radius: var(--rl); border: 2px solid var(--border-2); aspect-ratio: 4/3;
-      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: var(--white);
-    }
-    .map-box .map-emo { font-size: 2.5rem; }
+    .cg { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(36px,6vw,70px); align-items: start; }
+    .info-blk { margin-bottom: 30px; }
+    .info-blk h3 { font-size: .68rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .info-blk h3::after { content: ''; flex: 1; height: 1px; background: var(--border-2); }
+    .info-row { display: flex; align-items: center; gap: 11px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: .88rem; color: var(--text-mid); font-weight: 600; }
+    .info-row:last-child { border: none; }
+    .info-row .ic { width: 20px; text-align: center; color: var(--red); font-size: 1rem; flex-shrink: 0; }
+    .info-row a:hover { color: var(--red); }
+    .hr-row { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: .86rem; font-weight: 600; color: var(--text-mid); }
+    .hr-row:last-child { border: none; }
+    .hr-row .day { color: var(--text); font-weight: 800; }
+    .hr-row .closed { color: var(--text-muted); font-style: italic; }
+    .hr-row .open { color: var(--green); font-weight: 800; }
+    .map-box { border-radius: var(--rl); border: 2px solid var(--border-2); aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(145deg,var(--beige),var(--beige-2)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 8px 30px var(--shadow-md); font-size: .88rem; color: var(--text-mid); }
+    .map-box .map-emo { font-size: 2.8rem; }
+    .map-box strong { font-size: .95rem; color: var(--text); font-weight: 800; }
+    .map-box a { color: var(--red); font-weight: 800; border-bottom: 1px solid var(--border-2); padding-bottom: 2px; }
+    .map-box a:hover { border-color: var(--red); }
 
     /* FOOTER */
-    footer { background: #180e06; color: rgba(255, 255, 255, .55); padding: 40px 5vw; font-size: .82rem; }
-    .ft-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
-    .ft-logo { font-family: var(--font-logo); font-size: 1.4rem; color: #fff; }
-    .ft-logo em { color: var(--red); font-style: normal; }
-    .ft-links { display: flex; gap: 20px; }
-    
-    .wa {
-      position: fixed; bottom: 24px; right: 24px; background: #25d366; color: white;
-      width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      font-size: 28px; box-shadow: 0 4px 16px rgba(37, 211, 102, .35); z-index: 180;
-    }
+    footer { background: var(--text); color: rgba(255,255,255,.65); padding: 52px 5vw 28px; }
+    .fg { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; margin-bottom: 44px; }
+    .fbrand p { font-size: .8rem; color: rgba(255,255,255,.5); line-height: 1.75; margin-top: 12px; max-width: 250px; font-weight: 500; }
+    .f-logo-name { font-family: var(--font-logo); font-size: 1.4rem; color: var(--red-light); }
+    .f-logo-sub { font-size: .6rem; font-weight: 700; color: var(--gold-light); letter-spacing: .12em; text-transform: uppercase; }
+    .socials { display: flex; gap: 9px; margin-top: 18px; }
+    .soc { width: 35px; height: 35px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); display: flex; align-items: center; justify-content: center; font-size: .85rem; color: rgba(255,255,255,.55); transition: all .25s; }
+    .soc:hover { background: var(--red); border-color: var(--red); color: #fff; transform: translateY(-2px); }
+    .fcol h4 { font-size: .65rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 14px; }
+    .fcol ul { display: flex; flex-direction: column; gap: 9px; }
+    .fcol ul li a { font-size: .82rem; color: rgba(255,255,255,.55); transition: color .2s; font-weight: 600; }
+    .fcol ul li a:hover { color: var(--gold-light); }
+    .fbot { max-width: 1200px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .fbot p { font-size: .72rem; color: rgba(255,255,255,.3); font-weight: 600; }
+    .fbot a { color: var(--gold-light); }
 
+    /* WA FAB */
+    .wa { position: fixed; bottom: 24px; right: 24px; z-index: 100; width: 54px; height: 54px; border-radius: 50%; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.55rem; box-shadow: 0 6px 22px rgba(37,211,102,.42); transition: all .28s; }
+    .wa:hover { transform: scale(1.1); }
+
+    /* RESPONSIVE */
     @media (max-width: 900px) {
+      .nav-links, .btn-order { display: none; }
       .hamburger { display: flex; }
-      .nav-links { display: none; }
-      .hero-inner, .chi-grid, .cg { grid-template-columns: 1fr; text-align: center; }
+      .hero-inner, .chi-grid, .cg { grid-template-columns: 1fr; }
       .hero-visual { order: -1; }
+      .chi-visual { order: -1; }
+      .fg { grid-template-columns: 1fr 1fr; }
+      .fbrand { grid-column: 1/-1; }
+    }
+    @media (max-width: 580px) {
+      .pillars { grid-template-columns: 1fr; }
+      .fg { grid-template-columns: 1fr; }
+      .lgrid2 { grid-template-columns: 1fr; }
+      .strip-sep { display: none; }
+      .filter-row { flex-direction: column; gap: 6px; }
+      .filter-label { padding-top: 0; min-width: unset; }
     }
   </style>
 </head>
 <body>
 
+  <nav class="mob-nav" id="mobNav">
+    <button class="mob-close" id="mobClose">✕</button>
+    <a href="#chi-siamo" onclick="cM()">Chi Siamo</a>
+    <a href="#menu" onclick="cM()">Menu</a>
+    <a href="#consegna" onclick="cM()">Consegna</a>
+    <a href="#recensioni" onclick="cM()">Recensioni</a>
+    <a href="#contatti" onclick="cM()">Contatti</a>
+  </nav>
+
   <header id="hdr">
-    <div class="logo-wrap">
-      <img src="logo.png" alt="Logo Pizzeria A Casa di Lara" class="logo-img" />
-      <div class="logo-name">A Casa di Lara</div>
-    </div>
+    <a href="/" class="logo-wrap">
+      <img src="logo.png" alt="Logo Pizzeria A Casa di Lara" class="logo-img" width="52" height="52" />
+      <div>
+        <div class="logo-name">A Casa di Lara</div>
+        <div class="logo-sub">Pizzeria · Borsano, Busto Arsizio</div>
+      </div>
+    </a>
     <nav class="nav-links">
       <a href="#chi-siamo">Chi Siamo</a>
-      <a href="#menu">Il Menu</a>
-      <a href="#consegna">Asporto & Domicilio</a>
+      <a href="#menu">Menu</a>
+      <a href="#consegna">Consegna</a>
       <a href="#recensioni">Recensioni</a>
       <a href="#contatti">Contatti</a>
     </nav>
-    <button class="hamburger" id="hbtn" aria-label="Menu">
+    <a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer" class="btn-order">🛵 Ordina Ora</a>
+    <button class="hamburger" id="hbtn" aria-label="Apri menu">
       <span></span><span></span><span></span>
     </button>
   </header>
 
-  <div class="mob-nav" id="mobNav">
-    <button class="mob-close" id="mobClose">×</button>
-    <a href="#chi-siamo" onclick="cM()">Chi Siamo</a>
-    <a href="#menu" onclick="cM()">Il Menu</a>
-    <a href="#consegna" onclick="cM()">Domicilio</a>
-    <a href="#recensioni" onclick="cM()">Recensioni</a>
-    <a href="#contatti" onclick="cM()">Contatti</a>
-  </div>
-
   <main>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-deco-1"></div>
+      <div class="hero-deco-2"></div>
       <div class="hero-inner">
-        <div>
-          <div class="hero-eyebrow">🍕 Pizza & Kebab Artigianale</div>
-          <h1>A Casa di <span class="red">Lara</span></h1>
-          <p class="hero-desc">Scopri il gusto unico di 88 pizze artigianali e kebab di qualità a Borsano, Busto Arsizio. Pronte per l'asporto o consegnate a casa tua calde in 15-30 minuti!</p>
+        <div class="hero-content">
+          <div class="hero-eyebrow">⭐ 4.5 · 690+ Recensioni · Borsano di Busto Arsizio</div>
+          <h1>La <span class="red">pizza</span> buona<br>come a <span class="gold">casa</span></h1>
+          <p class="hero-desc">88 pizze fatte con passione ogni giorno, ingredienti freschi selezionati e tanta cura. Siamo a Borsano — a due passi da te. Ordina a domicilio o vieni a trovarci.</p>
           <div class="hero-btns">
-            <a href="#menu" class="btn-red">Consulta il Menu</a>
-            <a href="tel:+390331342199" class="btn-ghost">Chiama Ora</a>
+            <a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer" class="btn-red">🛵 Ordina su Just Eat</a>
+            <a href="#menu" class="btn-ghost">📋 Sfoglia il Menu</a>
           </div>
           <div class="hero-trust">
-            <div class="trust-pill"><span class="stars">★★★★★</span> 4.5 su Google</div>
-            <div class="trust-pill">⚡ Consegna Rapida</div>
+            <div class="trust-pill"><span class="stars">★★★★½</span> <strong>4.5</strong> Just Eat</div>
+            <div class="trust-pill">⏱️ 15-30 min consegna</div>
+            <div class="trust-pill">💶 Min. €12,00</div>
           </div>
         </div>
         <div class="hero-visual">
           <div class="logo-big-wrap">
             <div class="logo-big-ring"></div>
             <div class="logo-big-ring-2"></div>
-            <img src="logo.png" alt="Pizzeria Lara Busto Arsizio" class="logo-big-img" />
+            <img src="logo.png" alt="Pizzeria A Casa di Lara" class="logo-big-img" width="388" height="388" loading="eager" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- STRIP -->
     <div class="red-strip">
       <div class="strip-inner">
-        <div class="strip-stat"><div class="strip-n">88</div><div class="strip-l">Varietà di Pizze</div></div>
+        <div class="strip-stat rv"><div class="strip-n">88<em>+</em></div><div class="strip-l">Pizze in Menu</div></div>
         <div class="strip-sep"></div>
-        <div class="strip-stat"><div class="strip-n">15-30<em>m</em></div><div class="strip-l">Tempo di Consegna</div></div>
+        <div class="strip-stat rv d1"><div class="strip-n">4.5<em>★</em></div><div class="strip-l">Valutazione Media</div></div>
         <div class="strip-sep"></div>
-        <div class="strip-stat"><div class="strip-n">4.5</div><div class="strip-l">690+ Recensioni</div></div>
+        <div class="strip-stat rv d2"><div class="strip-n">690<em>+</em></div><div class="strip-l">Recensioni</div></div>
+        <div class="strip-sep"></div>
+        <div class="strip-stat rv d3"><div class="strip-n">15<em>'</em></div><div class="strip-l">Ritiro in Sede</div></div>
+        <div class="strip-sep"></div>
+        <div class="strip-stat rv d4"><div class="strip-n">€2</div><div class="strip-l">Commissione Consegna</div></div>
       </div>
     </div>
 
+    <!-- CHI SIAMO -->
     <section id="chi-siamo">
       <div class="si">
         <div class="chi-grid">
           <div class="chi-text">
-            <div class="stag">La Nostra Storia</div>
-            <h2>Passione per la Pizza, <em>dal Forno a Casa Tua</em></h2>
-            <div class="pullquote">"Prepariamo ogni impasto con cura artigianale, lasciandolo lievitare lentamente per garantirti leggerezza."</div>
-            <p>La Pizzeria "A Casa di Lara" a Borsano è il punto di riferimento per chi cerca una pizza ricca, digeribile e saporita, unita a un servizio a domicilio veloce.</p>
+            <div class="stag rv">La nostra storia</div>
+            <h2 class="rv d1">Una pizzeria di<br><em>quartiere vera</em></h2>
+            <p class="pullquote rv d2">"Ogni pizza che sforniamo è come cucinare per la nostra famiglia."</p>
+            <p class="rv d2">Siamo nati a Borsano con un'idea semplice: fare la pizza buona, quella di sempre, senza compromessi. Ingredienti freschi scelti ogni mattina, impasto lavorato a mano, cottura curata.</p>
+            <p class="rv d3">Il menu è grande — 88 pizze più calzoni, focacce, kebab e molto altro — perché crediamo che ognuno debba trovare la sua preferita.</p>
             <div class="pillars">
-              <div class="pillar"><div class="pillar-ico">🌾</div><p>Farine selezionate e lunghe lievitazioni.</p></div>
-              <div class="pillar"><div class="pillar-ico">🍅</div><p>Solo materie prime fresche ogni giorno.</p></div>
+              <div class="pillar rv d1"><div class="pillar-ico">🍅</div><h3>Ingredienti Freschi</h3><p>Selezioniamo pomodoro, mozzarella e verdure ogni giorno dai migliori fornitori.</p></div>
+              <div class="pillar rv d2"><div class="pillar-ico">🔥</div><h3>Cottura Perfetta</h3><p>Cornicione croccante, centro morbido. Ogni pizza seguita dalla preparazione alla consegna.</p></div>
+              <div class="pillar rv d3"><div class="pillar-ico">🛵</div><h3>Consegna Rapida</h3><p>Ordina su Just Eat: siamo da te in 15-30 minuti. Ritiro anche in 15 minuti.</p></div>
+              <div class="pillar rv d4"><div class="pillar-ico">💛</div><h3>Accoglienza Vera</h3><p>Sei un cliente, ma ti trattiamo come un ospite. È il nostro modo di fare le cose.</p></div>
             </div>
           </div>
           <div class="chi-visual">
-            <div class="chi-badge-1"><div class="b-n">100%</div><div class="b-l">Artigianale</div></div>
             <div class="chi-img-box">
-              <img src="logo.png" alt="La nostra pizzeria" style="width: 100%; height: 100%; object-fit: cover;" />
+              <img src="logo.png" alt="Pizzeria A Casa di Lara" style="width:80%;height:80%;object-fit:contain;position:relative;z-index:1" loading="lazy" />
             </div>
+            <div class="chi-badge-1 rv d2"><div class="b-n">4.5★</div><div class="b-l">Just Eat Rating</div></div>
+            <div class="chi-badge-2 rv d3"><div class="b-n">690+</div><div class="b-l">Recensioni Verificate</div></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- MENU -->
     <section id="menu">
       <div class="si">
         <div class="menu-hd">
-          <div class="stag">Le Nostre Specialità</div>
-          <h2>Esplora il <em>Nostro Menu</em></h2>
-          <div class="tabs">
-            <button class="tab on" data-t="pizze-classiche">Pizze Classiche</button>
-            <button class="tab" data-t="pizze-speciali">Le Speciali di Lara</button>
-            <button class="tab" data-t="pizze-bianche">Pizze Bianche</button>
-            <button class="tab" data-t="calzoni">Calzoni</button>
-            <button class="tab" data-t="kebab-sfizi">Kebab & Sfiziosità</button>
+          <div class="stag rv">Il Nostro Menu</div>
+          <h2 class="rv d1">88 pizze e <em>molto altro</em></h2>
+          <div class="tabs rv d3" role="tablist">
+            <button class="tab on" data-t="pizze">🍕 Pizze</button>
+            <button class="tab" data-t="calzoni">🫓 Calzoni & Focacce</button>
+            <button class="tab" data-t="kebab">🥙 Kebab & Menù</button>
+            <button class="tab" data-t="fritti">🍟 Fritti & Panini</button>
+            <button class="tab" data-t="insalate">🥗 Insalate & Dolci</button>
+            <button class="tab" data-t="bevande">🥤 Bevande</button>
           </div>
         </div>
 
-        <div class="panel on" id="pizze-classiche">
-          <div class="msec-title">Le Pizze Tradizionali Italiane</div>
-          <div class="pgrid">
-            <div class="pcard">
-              <span class="pcard-sig">Popolare</span>
-              <div class="pcard-top"><div class="pcard-emo">🍕</div><div class="pcard-price"><span class="amt">€ 5.50</span></div></div>
-              <div class="pcard-body"><h3>Margherita</h3><p class="desc">Pomodoro biologico, mozzarella fior di latte, basilico fresco, olio EVO.</p><span class="allergen">Glutine, Lattosio</span></div>
+        <!-- ── PIZZE ── -->
+        <div class="panel on" id="tp-pizze">
+          <p class="mnote">Tutti i prezzi sono "da €X" — disponibili in più misure. Indica allergie al momento dell'ordine.</p>
+
+          <!-- FILTRI -->
+          <div class="filter-bar">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+              <div class="filter-bar-title">🔍 Trova la tua pizza</div>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <div class="filter-results-count">Mostrate: <span id="pizza-count">73</span> pizze</div>
+                <button class="filter-reset" id="reset-filters">✕ Azzera filtri</button>
+              </div>
             </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🌶️</div><div class="pcard-price"><span class="amt">€ 7.00</span></div></div>
-              <div class="pcard-body"><h3>Diavola</h3><p class="desc">Pomodoro, mozzarella fior di latte, salame piccante calabrese.</p><span class="allergen">Glutine, Lattosio</span></div>
+
+            <!-- Ricerca libera -->
+            <div class="filter-row">
+              <span class="filter-label">🔎 Cerca</span>
+              <div class="filter-search-wrap">
+                <span class="filter-search-icon">🍕</span>
+                <input type="text" class="filter-search" id="pizza-search" placeholder="Nome o ingrediente (es. funghi, salmone, bufala…)" />
+              </div>
             </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🍄</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
-              <div class="pcard-body"><h3>Capricciosa</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere.</p><span class="allergen">Glutine, Lattosio</span></div>
+
+            <!-- Ordina per prezzo -->
+            <div class="filter-row">
+              <span class="filter-label">💶 Ordina</span>
+              <div class="filter-chips">
+                <button class="fchip sort-chip active" data-sort="default">A–Z</button>
+                <button class="fchip sort-chip" data-sort="asc">Prezzo ↑</button>
+                <button class="fchip sort-chip" data-sort="desc">Prezzo ↓</button>
+              </div>
             </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🧀</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
-              <div class="pcard-body"><h3>Quattro Formaggi</h3><p class="desc">Pomodoro, mozzarella, gorgonzola DOP, fontina, scamorza affumicata.</p><span class="allergen">Glutine, Lattosio</span></div>
+
+            <!-- Fascia di prezzo -->
+            <div class="filter-row">
+              <span class="filter-label">🏷️ Prezzo</span>
+              <div class="filter-chips">
+                <button class="fchip price-chip" data-price="budget">Fino a €7</button>
+                <button class="fchip price-chip" data-price="mid">€7 – €9</button>
+                <button class="fchip price-chip" data-price="premium">€9+</button>
+              </div>
             </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🐟</div><div class="pcard-price"><span class="amt">€ 6.50</span></div></div>
-              <div class="pcard-body"><h3>Napoli</h3><p class="desc">Pomodoro, mozzarella fior di latte, acciughe, origano siciliano.</p><span class="allergen">Glutine, Lattosio, Pesce</span></div>
+
+            <!-- Filtra per allergene (ESCLUDI) -->
+            <div class="filter-row">
+              <span class="filter-label">⚠️ Senza</span>
+              <div class="filter-chips">
+                <button class="fchip allergen-chip" data-allergen="pesce">Pesce</button>
+                <button class="fchip allergen-chip" data-allergen="crostacei">Crostacei</button>
+                <button class="fchip allergen-chip" data-allergen="uova">Uova</button>
+                <button class="fchip allergen-chip" data-allergen="frutta a guscio">Frutta a guscio</button>
+                <button class="fchip allergen-chip" data-allergen="molluschi">Molluschi</button>
+              </div>
             </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🌿</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
-              <div class="pcard-body"><h3>Vegetariana</h3><p class="desc">Pomodoro, mozzarella, zucchine, melanzane e peperoni alla griglia.</p><span class="allergen">Glutine, Lattosio</span></div>
+
+            <!-- Categoria rapida -->
+            <div class="filter-row">
+              <span class="filter-label">🏷️ Tipo</span>
+              <div class="filter-chips">
+                <button class="fchip cat-chip" data-cat="vegetariana">🌿 Vegetariane</button>
+                <button class="fchip cat-chip" data-cat="carne">🥩 Con Carne</button>
+                <button class="fchip cat-chip" data-cat="mare">🐟 Di Mare</button>
+                <button class="fchip cat-chip" data-cat="piccante">🌶️ Piccanti</button>
+                <button class="fchip cat-chip" data-cat="signature">⭐ Signature</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="panel" id="pizze-speciali">
-          <div class="msec-title">Le Creazioni Esclusive di Lara</div>
-          <div class="pgrid">
-            <div class="pcard">
-              <span class="pcard-sig">Della Casa</span>
-              <div class="pcard-top"><div class="pcard-emo">🏡</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
-              <div class="pcard-body"><h3>Pizza Lara</h3><p class="desc">Pomodoro, mozzarella, porcini, zola, salame piccante e scaglie di grana.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <span class="pcard-sig">Borsano Top</span>
-              <div class="pcard-top"><div class="pcard-emo">🥓</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
-              <div class="pcard-body"><h3>Tirolese</h3><p class="desc">Pomodoro, mozzarella fior di latte, speck del Tirolo, porcini, olio al tartufo.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">👑</div><div class="pcard-price"><span class="amt">€ 9.00</span></div></div>
-              <div class="pcard-body"><h3>Regina</h3><p class="desc">Pomodoro, mozzarella di bufala campana DOP, pomodorini ciliegino, crudo di Parma.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🍖</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
-              <div class="pcard-body"><h3>Boscaiola Speciale</h3><p class="desc">Pomodoro, mozzarella, salsiccia fresca, funghi chiodini, panna artigianale.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
+          <!-- GRIGLIA PIZZE -->
+          <div class="pgrid" id="pizza-grid">
+
+            <!-- SIGNATURE / IN EVIDENZA -->
+            <article class="pcard" data-name="Pizza Lara" data-price="9.50" data-allergens="cereali pesce latte" data-tags="signature mare pesce">
+              <span class="pcard-sig">Signature</span>
+              <div class="pcard-top"><span class="pcard-emo">🍕</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Pizza Lara</h3><p class="desc">Pomodoro, mozzarella, tonno, funghi porcini e gorgonzola. La pizza della casa, quella che Lara prepara con più orgoglio.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Pizza Kebab" data-price="9.50" data-allergens="cereali uova latte" data-tags="signature carne">
+              <span class="pcard-sig">Best Seller</span>
+              <div class="pcard-top"><span class="pcard-emo">🥙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Pizza Kebab</h3><p class="desc">Pomodoro, mozzarella, cipolla, carne kebab, insalata, pomodoro fresco e salse. Il best-seller.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte · <em>kebab surgelato</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Quattro Formaggi" data-price="8.50" data-allergens="cereali uova latte" data-tags="">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Quattro Formaggi</h3><p class="desc">Pomodoro, mozzarella e una selezione di formaggi vari. Ricca, filante, irresistibile.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tedesca" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🌭</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Tedesca</h3><p class="desc">Pomodoro, mozzarella, wurstel e patatine fritte. Un abbinamento goloso che piace a tutti.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte · <em>patatine surgelate</em></div></div>
+            </article>
+
+            <!-- TUTTE LE PIZZE A-Z -->
+            <article class="pcard" data-name="Abbinata" data-price="8.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🥬</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Abbinata</h3><p class="desc">Pomodoro, mozzarella, trevisana e scamorza.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Americana" data-price="9.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🫑</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Americana</h3><p class="desc">Pomodoro, mozzarella, taleggio, scamorza e peperoni.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Bacio" data-price="8.00" data-allergens="cereali crostacei latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Bacio</h3><p class="desc">Pomodoro, mozzarella e gamberetti.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, latte · <em>gamberetti surgelati</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Biancaneve" data-price="6.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">⬜</span><div class="pcard-price"><span class="from">da</span><span class="amt">€6,50</span></div></div>
+              <div class="pcard-body"><h3>Biancaneve</h3><p class="desc">Solo mozzarella. Minimalista e deliziosa.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Bismarck" data-price="8.50" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍳</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Bismarck</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, uovo e grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Boscaiola" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Boscaiola</h3><p class="desc">Pomodoro, mozzarella, funghi porcini e pancetta affumicata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Braccio di Ferro" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥬</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Braccio di Ferro</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, ricotta e spinaci.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Bresaola" data-price="8.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Bresaola</h3><p class="desc">Pomodoro, mozzarella e bresaola. Semplice e saporita.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Brianza" data-price="8.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Brianza</h3><p class="desc">Pomodoro, mozzarella, salsiccia e scamorza affumicata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Bufala" data-price="8.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🐃</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Bufala</h3><p class="desc">Pomodoro, mozzarella di bufala e pomodoro fresco.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Budy" data-price="9.00" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🧅</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Budy</h3><p class="desc">Pomodoro, mozzarella, salame piccante, gorgonzola e cipolla.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Campagnola" data-price="8.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🥗</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Campagnola</h3><p class="desc">Mozzarella, ricotta, pomodorini e rucola fresca.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Canadese" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Canadese</h3><p class="desc">Pomodoro, mozzarella, gorgonzola e prosciutto crudo.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Capricciosa" data-price="8.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🫙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Capricciosa</h3><p class="desc">Pomodoro, mozzarella, acciughe, carciofi, olive, funghi, capperi e origano.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Caraibi" data-price="9.00" data-allergens="cereali crostacei latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Caraibi</h3><p class="desc">Pomodoro, mozzarella di bufala, olive e gamberetti.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Carbonara" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥓</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Carbonara</h3><p class="desc">Pomodoro, mozzarella, pancetta, cipolla e panna. Cremosa e avvolgente.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Carciofi" data-price="7.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🥬</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Carciofi</h3><p class="desc">Pomodoro, mozzarella e carciofi.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Cheope" data-price="9.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Cheope</h3><p class="desc">Pomodoro, mozzarella, salmone, funghi porcini e rucola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Contadina" data-price="8.00" data-allergens="cereali latte" data-tags="">
+              <div class="pcard-top"><span class="pcard-emo">🧅</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Contadina</h3><p class="desc">Pomodoro, mozzarella, cipolla e gorgonzola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Crudo" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Crudo</h3><p class="desc">Pomodoro, mozzarella e prosciutto crudo di qualità.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Del Faraone" data-price="8.50" data-allergens="cereali crostacei uova latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Del Faraone</h3><p class="desc">Pomodoro, mozzarella, zucchine, gamberetti e grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Diavola" data-price="7.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🌶️</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Diavola</h3><p class="desc">Pomodoro, mozzarella e salame piccante. Carattere deciso, anime di fuoco.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Egiziana" data-price="9.00" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Egiziana</h3><p class="desc">Pomodoro, mozzarella, rucola, salsiccia e grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Fantasia" data-price="9.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Fantasia</h3><p class="desc">Pomodoro, mozzarella, wurstel, salsiccia, pancetta, speck e prosciutto crudo. Per i carnivori!</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Favola" data-price="9.50" data-allergens="cereali crostacei latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Favola</h3><p class="desc">Pomodoro, mozzarella, zucchine, scamorza, gamberetti e rucola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Favolosa" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Favolosa</h3><p class="desc">Mozzarella, prosciutto cotto e gorgonzola. Filante e golosa.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Fede" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🙏</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Fede</h3><p class="desc">Pomodoro, mozzarella, salsiccia, cipolla e gorgonzola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Florida" data-price="9.00" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🌿</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Florida</h3><p class="desc">Pomodoro, mozzarella, salsiccia, funghi porcini e grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Friarielli e Salsiccia" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥬</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Friarielli e Salsiccia</h3><p class="desc">Pomodoro, mozzarella, friarielli e salsiccia. Un must napoletano.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Friarielli e Tonno" data-price="8.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Friarielli e Tonno</h3><p class="desc">Pomodoro, mozzarella, friarielli e tonno.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Frutti di Mare" data-price="9.00" data-allergens="cereali crostacei pesce latte molluschi" data-tags="mare pesce crostacei molluschi">
+              <div class="pcard-top"><span class="pcard-emo">🦞</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Frutti di Mare</h3><p class="desc">Pomodoro, mozzarella e frutti di mare. Profumo di mare ad ogni morso.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, pesce, latte, molluschi · <em>surgelati</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Funghi Porcini" data-price="8.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Funghi Porcini</h3><p class="desc">Pomodoro, mozzarella e funghi porcini selezionati.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Gustosa" data-price="8.50" data-allergens="cereali latte" data-tags="vegetariana piccante">
+              <div class="pcard-top"><span class="pcard-emo">🫑</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Gustosa</h3><p class="desc">Pomodoro, mozzarella, gorgonzola e peperoni.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Incazzata" data-price="8.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🔥</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Incazzata</h3><p class="desc">Pomodoro, mozzarella, salame piccante, peperoni e peperoncino. Non è per i deboli di cuore!</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Innamorata" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">💙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Innamorata</h3><p class="desc">Pomodoro, mozzarella, funghi porcini, wurstel e panna.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Inter" data-price="9.50" data-allergens="cereali crostacei uova latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Inter</h3><p class="desc">Pomodoro, mozzarella, gamberetti, grana e rucola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, uova, latte · <em>gamberetti surgelati</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Jasmine" data-price="9.00" data-allergens="cereali pesce latte frutta a guscio" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Jasmine</h3><p class="desc">Pomodoro, mozzarella, salmone, panna e noci. Originale e sorprendente.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte, frutta a guscio</div></div>
+            </article>
+
+            <article class="pcard" data-name="Juve" data-price="9.50" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">⚽</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Juve</h3><p class="desc">Pomodoro, mozzarella, prosciutto crudo, rucola e grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Lombardia" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Lombardia</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, scamorza e patatine.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Macellaia" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Macellaia</h3><p class="desc">Pomodoro, mozzarella, salsiccia fresca e pancetta.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Mangia e Taci" data-price="9.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🗺️</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Mangia e Taci</h3><p class="desc">Pomodoro, mozzarella, funghi, carciofi, olive, salsiccia, salame piccante e capperi. Per i super golosi!</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Mar Rosso" data-price="10.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🐃</span><div class="pcard-price"><span class="from">da</span><span class="amt">€10,00</span></div></div>
+              <div class="pcard-body"><h3>Mar Rosso</h3><p class="desc">Pomodoro, mozzarella di bufala, bresaola, rucola e grana. Elegante e saporita.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Mare e Monti" data-price="9.00" data-allergens="cereali crostacei latte" data-tags="mare crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🌊</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Mare e Monti</h3><p class="desc">Pomodoro, mozzarella, funghi porcini e gamberetti. Terra e mare insieme.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, latte · <em>gamberetti surgelati</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Marinara" data-price="6.00" data-allergens="cereali" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🌿</span><div class="pcard-price"><span class="from">da</span><span class="amt">€6,00</span></div></div>
+              <div class="pcard-body"><h3>Marinara</h3><p class="desc">Pomodoro, origano, aglio e olio. La tradizione più pura, senza mozzarella.</p><div class="allergen"><strong>Allergeni:</strong> cereali</div></div>
+            </article>
+
+            <article class="pcard" data-name="Margherita" data-price="6.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🍅</span><div class="pcard-price"><span class="from">da</span><span class="amt">€6,50</span></div></div>
+              <div class="pcard-body"><h3>Margherita</h3><p class="desc">Pomodoro e mozzarella. Il classico eterno che non delude mai.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Matta" data-price="9.00" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Matta</h3><p class="desc">Pomodoro, mozzarella, funghi porcini, prosciutto cotto e scaglie di grana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Messicana" data-price="9.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🌮</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Messicana</h3><p class="desc">Salame piccante, salsa piccante, cipolla, fagioli, peperoni e peperoncino. Speziata al punto giusto.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Mezza Luna" data-price="9.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🌙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Mezza Luna</h3><p class="desc">Pomodoro, mozzarella, funghi porcini, prosciutto crudo e rucola.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Mido" data-price="8.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Mido</h3><p class="desc">Pomodoro, mozzarella, tonno, zucchine e mais.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Milan" data-price="8.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">⚽</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Milan</h3><p class="desc">Pomodoro, mozzarella, salame piccante, cipolle e olive.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Napoli" data-price="7.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Napoli</h3><p class="desc">Pomodoro, mozzarella, acciughe e origano.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Olive" data-price="7.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🫒</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Olive</h3><p class="desc">Pomodoro, mozzarella e olive nere. Semplice e mediterranea.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Ortolana" data-price="8.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🥦</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Ortolana</h3><p class="desc">Pomodoro, mozzarella e verdure grigliate. Leggera e colorata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Parmigiana" data-price="8.00" data-allergens="cereali uova latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🍆</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Parmigiana</h3><p class="desc">Pomodoro, mozzarella, melanzane e grana. Il sapore della tradizione del Sud.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Pizza Affumicata" data-price="9.00" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🔥</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Pizza Affumicata</h3><p class="desc">Pomodoro, mozzarella, 4 formaggi e salame dolce. Profumata e ricca.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Pizza Pazza" data-price="7.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🍟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Pizza Pazza</h3><p class="desc">Pomodoro, mozzarella e patatine. Per chi ama le combinazioni originali!</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Piramidi" data-price="8.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Piramidi</h3><p class="desc">Pomodoro, mozzarella, salmone e spinaci. Fresca e delicata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Primavera" data-price="9.50" data-allergens="cereali uova latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🐃</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,50</span></div></div>
+              <div class="pcard-body"><h3>Primavera</h3><p class="desc">Pomodoro, mozzarella di bufala, pomodoro fresco e grana. Profumo d'estate.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Prosciutto" data-price="7.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Prosciutto</h3><p class="desc">Pomodoro, mozzarella e prosciutto cotto.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Prosciutto e Funghi" data-price="8.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Prosciutto e Funghi</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto e funghi. Il grande classico.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Pugliese" data-price="7.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🧅</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,00</span></div></div>
+              <div class="pcard-body"><h3>Pugliese</h3><p class="desc">Pomodoro, mozzarella, cipolla e origano. Rustica e profumata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Quattro Stagioni" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Quattro Stagioni</h3><p class="desc">Pomodoro, mozzarella, prosciutto, olive, carciofi e funghi. Un classico senza tempo.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Regina" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">👑</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Regina</h3><p class="desc">Pomodoro, mozzarella, taleggio, zucchine e prosciutto cotto. Raffinata e cremosa.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Romana" data-price="8.00" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🫙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Romana</h3><p class="desc">Pomodoro, mozzarella, acciughe, olive, origano e capperi. Decisa e saporita.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Rosetta" data-price="8.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🫒</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Rosetta</h3><p class="desc">Pomodoro, mozzarella, olive e scamorza.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Rucola" data-price="7.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🌿</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Rucola</h3><p class="desc">Pomodoro, mozzarella e rucola fresca. Leggera e aromatica.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Saporita" data-price="9.00" data-allergens="cereali uova latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Saporita</h3><p class="desc">Pomodoro, mozzarella, funghi, speck e grana. Il sapore della montagna.</p><div class="allergen"><strong>Allergeni:</strong> cereali, uova, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Sfinge" data-price="9.00" data-allergens="cereali crostacei pesce latte" data-tags="mare pesce crostacei">
+              <div class="pcard-top"><span class="pcard-emo">🦐</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Sfinge</h3><p class="desc">Pomodoro, mozzarella, gamberetti, salmone e rucola. Per gli amanti del mare.</p><div class="allergen"><strong>Allergeni:</strong> cereali, crostacei, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Sibora" data-price="8.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Sibora</h3><p class="desc">Pomodoro, mozzarella, salsiccia e patatine fritte.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte · <em>patatine surgelate</em></div></div>
+            </article>
+
+            <article class="pcard" data-name="Siciliana" data-price="7.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🫙</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Siciliana</h3><p class="desc">Pomodoro, capperi, acciughe, origano e olive. Il profumo della Sicilia.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Simpatia" data-price="8.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Simpatia</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto e panna. Morbida e avvolgente.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Speck" data-price="8.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🥩</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Speck</h3><p class="desc">Pomodoro, mozzarella e speck Alto Adige.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Speck e Brie" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🧀</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Speck e Brie</h3><p class="desc">Pomodoro, mozzarella, speck e brie. Abbinamento raffinato.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Sportiva" data-price="8.50" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🌶️</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,50</span></div></div>
+              <div class="pcard-body"><h3>Sportiva</h3><p class="desc">Pomodoro, mozzarella, salame piccante e funghi. Saporita e decisa.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Strega" data-price="9.00" data-allergens="cereali latte" data-tags="carne piccante">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Strega</h3><p class="desc">Pomodoro, mozzarella, salame piccante e funghi porcini. Intensa e profumata.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tirolese" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🏔️</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Tirolese</h3><p class="desc">Pomodoro, mozzarella, scamorza e speck. Il sapore delle Alpi.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tonno" data-price="7.50" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Tonno</h3><p class="desc">Pomodoro, mozzarella e tonno. Semplice e gustosa.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tonno e Cipolla" data-price="8.00" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Tonno e Cipolla</h3><p class="desc">Pomodoro, mozzarella, tonno e cipolla.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tonno e Peperoni" data-price="8.00" data-allergens="cereali pesce latte" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Tonno e Peperoni</h3><p class="desc">Pomodoro, mozzarella, tonno e peperoni colorati.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Tonno e Pesto" data-price="8.00" data-allergens="cereali pesce latte frutta a guscio" data-tags="mare pesce">
+              <div class="pcard-top"><span class="pcard-emo">🐟</span><div class="pcard-price"><span class="from">da</span><span class="amt">€8,00</span></div></div>
+              <div class="pcard-body"><h3>Tonno e Pesto</h3><p class="desc">Pomodoro, mozzarella, tonno e pesto di basilico.</p><div class="allergen"><strong>Allergeni:</strong> cereali, pesce, latte, frutta a guscio</div></div>
+            </article>
+
+            <article class="pcard" data-name="Trevisana" data-price="7.50" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🥬</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Trevisana</h3><p class="desc">Pomodoro, mozzarella e trevisana.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Valtellina" data-price="9.00" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🍄</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>Valtellina</h3><p class="desc">Pomodoro, mozzarella, funghi porcini e bresaola. Profumo di montagna.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="Wurstel" data-price="7.50" data-allergens="cereali latte" data-tags="carne">
+              <div class="pcard-top"><span class="pcard-emo">🌭</span><div class="pcard-price"><span class="from">da</span><span class="amt">€7,50</span></div></div>
+              <div class="pcard-body"><h3>Wurstel</h3><p class="desc">Pomodoro, mozzarella e wurstel. La preferita dei bambini.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+            <article class="pcard" data-name="5 Stagioni" data-price="9.00" data-allergens="cereali latte" data-tags="vegetariana">
+              <div class="pcard-top"><span class="pcard-emo">🌿</span><div class="pcard-price"><span class="from">da</span><span class="amt">€9,00</span></div></div>
+              <div class="pcard-body"><h3>5 Stagioni</h3><p class="desc">Pomodoro, mozzarella, zucchine, carciofi, olive, bresaola e funghi porcini. Un'estate di sapori.</p><div class="allergen"><strong>Allergeni:</strong> cereali, latte</div></div>
+            </article>
+
+          </div><!-- /pizza-grid -->
+
+          <!-- No results message -->
+          <div class="no-results" id="no-results" style="display:none;">
+            <div class="nr-emo">🍕</div>
+            <h3>Nessuna pizza trovata</h3>
+            <p>Prova a cambiare i filtri o la ricerca.</p>
           </div>
-        </div>
 
-        <div class="panel" id="pizze-bianche">
-          <div class="msec-title">Pizze Delicate Senza Pomodoro</div>
-          <div class="pgrid">
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🌱</div><div class="pcard-price"><span class="amt">€ 8.00</span></div></div>
-              <div class="pcard-body"><h3>Primavera</h3><p class="desc">Base mozzarella, all'uscita: bresaola della Valtellina, rucola, scaglie di grana.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🐖</div><div class="pcard-price"><span class="amt">€ 8.50</span></div></div>
-              <div class="pcard-body"><h3>Delicata</h3><p class="desc">Base mozzarella, stracciatella di bufala fresca, mortadella IGP, granella di pistacchio.</p><span class="allergen">Glutine, Lattosio, Frutta a guscio</span></div>
-            </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🥔</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
-              <div class="pcard-body"><h3>Campagnola</h3><p class="desc">Base mozzarella, patate al forno aromatizzate, salsiccia fresca, rosmarino.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-          </div>
-        </div>
+        </div><!-- /tp-pizze -->
 
-        <div class="panel" id="calzoni">
-          <div class="msec-title">I Nostri Calzoni Ripieni Sfornati sul Momento</div>
-          <div class="pgrid">
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🥟</div><div class="pcard-price"><span class="amt">€ 7.00</span></div></div>
-              <div class="pcard-body"><h3>Calzone Classico</h3><p class="desc">Ripieno di pomodoro, mozzarella fior di latte, prosciutto cotto nostrano.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <div class="pcard-top"><div class="pcard-emo">🔥</div><div class="pcard-price"><span class="amt">€ 7.50</span></div></div>
-              <div class="pcard-body"><h3>Calzone Farcito</h3><p class="desc">Pomodoro, mozzarella, prosciutto cotto, funghi champignon, carciofi.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-            <div class="pcard">
-              <span class="pcard-sig">Piccante</span>
-              <div class="pcard-top"><div class="pcard-emo">🌋</div><div class="pcard-price"><span class="amt">€ 8.00</span></div></div>
-              <div class="pcard-body"><h3>Calzone lara-style</h3><p class="desc">Mozzarella, salame piccante, gorgonzola DOP e peperoncino fresco.</p><span class="allergen">Glutine, Lattosio</span></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel" id="kebab-sfizi">
-          <div class="msec-title">Kebab di Qualità e Fritti Sfiziosi</div>
+        <!-- CALZONI & FOCACCE -->
+        <div class="panel" id="tp-calzoni">
+          <div class="msec-title">🫓 Calzoni</div>
           <div class="llist">
-            <div class="litem">
-              <div class="litem-main">
-                <div class="litem-ico">🌯</div>
-                <div class="litem-body"><h3>Piadina Kebab Completa</h3><p>Carne kebab, insalata, pomodoro, cipolla, salsa yogurt, salsa piccante.</p></div>
-              </div>
-              <div class="litem-price">€ 6.50</div>
-            </div>
-            <div class="litem">
-              <div class="litem-main">
-                <div class="litem-ico">🍔</div>
-                <div class="litem-body"><h3>Panino Kebab</h3><p>Pane artigianale caldo, carne kebab tenera, verdure fresche e salse a scelta.</p></div>
-              </div>
-              <div class="litem-price">€ 6.00</div>
-            </div>
-            <div class="litem">
-              <div class="litem-main">
-                <div class="litem-ico">🍟</div>
-                <div class="litem-body"><h3>Patatine Fritte</h3><p>Porzione abbondante di patatine dorate e croccanti servite con salse.</p></div>
-              </div>
-              <div class="litem-price">€ 3.50</div>
-            </div>
-            <div class="litem">
-              <div class="litem-main">
-                <div class="litem-ico">🍗</div>
-                <div class="litem-body"><h3>Nuggets di Pollo (6 pz)</h3><p>Croccanti pepite di pollo fritto, ideali come sfizio pre-pizza.</p></div>
-              </div>
-              <div class="litem-price">€ 4.50</div>
-            </div>
+            <div class="litem"><div class="litem-ico">🫓</div><div class="litem-body"><h3>Calzone Liscio</h3><p>Pomodoro, mozzarella e prosciutto cotto.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€7,50</div></div>
+            <div class="litem"><div class="litem-ico">🫓</div><div class="litem-body"><h3>Calzone Farcito</h3><p>Pomodoro, mozzarella, prosciutto cotto, funghi e carciofi.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€8,50</div></div>
+            <div class="litem"><div class="litem-ico">🥙</div><div class="litem-body"><h3>Calzone Kebab</h3><p>Pomodoro, mozzarella e carne di kebab.</p><small>Allergeni: cereali, latte · carne kebab surgelata</small></div><div class="litem-price">€9,00</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🥖 Focacce</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🥖</div><div class="litem-body"><h3>Focaccia Liscia</h3><p>Olio, sale e origano. La semplicità fatta arte.</p><small>Allergeni: cereali</small></div><div class="litem-price">€4,50</div></div>
+            <div class="litem"><div class="litem-ico">🥗</div><div class="litem-body"><h3>Focaccia Araba</h3><p>Scamorza, rucola, bresaola e grana.</p><small>Allergeni: cereali, uova, latte</small></div><div class="litem-price">€9,00</div></div>
+            <div class="litem"><div class="litem-ico">🐃</div><div class="litem-body"><h3>Focaccia Catanese</h3><p>Mozzarella di bufala, rucola, pomodorini e grana.</p><small>Allergeni: cereali, uova, latte</small></div><div class="litem-price">€9,00</div></div>
+            <div class="litem"><div class="litem-ico">🍫</div><div class="litem-body"><h3>Focaccia con Nutella</h3><p>Focaccia calda con Nutella. Il dessert perfetto!</p><small>Allergeni: cereali, soia, latte, frutta a guscio</small></div><div class="litem-price">€7,00</div></div>
+          </div>
+        </div>
+
+        <!-- KEBAB -->
+        <div class="panel" id="tp-kebab">
+          <p class="mnote">⚠️ Tutti i prodotti kebab sono surgelati. I menù includono patatine fritte e bibita 33cl.</p>
+          <div class="msec-title">⭐ Menù Completi</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🥪</div><div class="litem-body"><h3>Menù Panino Kebab</h3><p>Panino kebab + patatine fritte + bibita 33cl.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€10,00</div></div>
+            <div class="litem"><div class="litem-ico">🌯</div><div class="litem-body"><h3>Menù Piadina Kebab</h3><p>Piadina kebab + patatine fritte + bibita 33cl.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€10,00</div></div>
+            <div class="litem"><div class="litem-ico">🫔</div><div class="litem-body"><h3>Menù Panino Falafel</h3><p>Panino falafel + patatine fritte + bibita 33cl.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€10,00</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🥙 Singoli</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🥪</div><div class="litem-body"><h3>Panino Kebab</h3><p>Kebab, pomodoro, insalata, cipolla, salsa bianca e piccante.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€6,50</div></div>
+            <div class="litem"><div class="litem-ico">🌯</div><div class="litem-body"><h3>Piadina Kebab</h3><p>Kebab, pomodoro, insalata, cipolla, salsa bianca e piccante.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€6,50</div></div>
+            <div class="litem"><div class="litem-ico">🍽️</div><div class="litem-body"><h3>Piatto Kebab con Pane</h3><p>Kebab abbondante con pane, pomodoro, insalata, cipolla e salse.</p><small>Allergeni: cereali, uova, latte · surgelato</small></div><div class="litem-price">€9,50</div></div>
+          </div>
+        </div>
+
+        <!-- FRITTI & PANINI -->
+        <div class="panel" id="tp-fritti">
+          <div class="msec-title">🍟 Fritti</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🍟</div><div class="litem-body"><h3>Vaschetta di Patatine</h3><p>Patatine fritte dorate e croccanti.</p><small>Surgelate</small></div><div class="litem-price">da €2,50</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🌭 Hot Dog</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🌭</div><div class="litem-body"><h3>Hot Dog</h3><p>Wurstel nel pane con salse a scelta. Goloso e veloce.</p><small>Allergeni: cereali, uova</small></div><div class="litem-price">€5,50</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🥪 Panini</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🥪</div><div class="litem-body"><h3>Panino con Prosciutto Crudo</h3><p>Prosciutto crudo, pomodoro e mozzarella.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€6,50</div></div>
+            <div class="litem"><div class="litem-ico">🥪</div><div class="litem-body"><h3>Panino con Prosciutto Cotto</h3><p>Prosciutto cotto, pomodoro e mozzarella.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€6,50</div></div>
+            <div class="litem"><div class="litem-ico">🥩</div><div class="litem-body"><h3>Panino con Speck</h3><p>Speck, pomodoro e mozzarella.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€6,50</div></div>
+          </div>
+        </div>
+
+        <!-- INSALATE & DOLCI -->
+        <div class="panel" id="tp-insalate">
+          <div class="msec-title">🥗 Insalate (con pane incluso)</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🥗</div><div class="litem-body"><h3>Insalata Mista</h3><p>Pomodoro, insalata, trevisana, olive e olio. Fresca e leggera.</p><small>Allergeni: cereali</small></div><div class="litem-price">€8,50</div></div>
+            <div class="litem"><div class="litem-ico">🐟</div><div class="litem-body"><h3>Insalata con Tonno</h3><p>Pomodoro, mais, insalata, olive, tonno e olio.</p><small>Allergeni: cereali, pesce</small></div><div class="litem-price">€8,50</div></div>
+            <div class="litem"><div class="litem-ico">🐃</div><div class="litem-body"><h3>Insalata Caprese</h3><p>Pomodoro, mozzarella di bufala, origano, insalata e olio. L'estate nel piatto.</p><small>Allergeni: cereali, latte</small></div><div class="litem-price">€8,50</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🍫 Dolci</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🍫</div><div class="litem-body"><h3>Calzone con Nutella</h3><p>Nutella, cocco e panna. Il dessert che tutti aspettano!</p><small>Allergeni: cereali, uova, latte, frutta a guscio</small></div><div class="litem-price">€7,50</div></div>
+            <div class="litem"><div class="litem-ico">🍫</div><div class="litem-body"><h3>Focaccia con Nutella</h3><p>Focaccia calda con Nutella spalmata. Impossibile resistere.</p><small>Allergeni: cereali, soia, latte, frutta a guscio</small></div><div class="litem-price">€7,00</div></div>
+          </div>
+        </div>
+
+        <!-- BEVANDE -->
+        <div class="panel" id="tp-bevande">
+          <div class="msec-title">🥤 Analcoliche</div>
+          <div class="lgrid2">
+            <div class="litem"><div class="litem-ico">💧</div><div class="litem-body"><h3>Acqua Naturale</h3><p>50cl</p></div><div class="litem-price">€1,00</div></div>
+            <div class="litem"><div class="litem-ico">💧</div><div class="litem-body"><h3>Acqua Frizzante</h3><p>50cl</p></div><div class="litem-price">€1,00</div></div>
+            <div class="litem"><div class="litem-ico">🥤</div><div class="litem-body"><h3>Coca-Cola</h3><p>Lattina 33cl</p></div><div class="litem-price">€2,00</div></div>
+            <div class="litem"><div class="litem-ico">🍊</div><div class="litem-body"><h3>Fanta Original</h3><p>Lattina 33cl</p></div><div class="litem-price">€2,00</div></div>
+            <div class="litem"><div class="litem-ico">🟢</div><div class="litem-body"><h3>Sprite</h3><p>Lattina 330ml</p></div><div class="litem-price">€2,00</div></div>
+            <div class="litem"><div class="litem-ico">🥤</div><div class="litem-body"><h3>Coca-Cola 1.5L</h3><p>Bottiglia PET</p></div><div class="litem-price">€3,50</div></div>
+          </div>
+          <div class="msec-title" style="margin-top:36px">🍺 Birre</div>
+          <div class="llist">
+            <div class="litem"><div class="litem-ico">🍺</div><div class="litem-body"><h3>Birra</h3><p>Chiedi la selezione disponibile al momento dell'ordine.</p></div><div class="litem-price">—</div></div>
           </div>
         </div>
 
       </div>
     </section>
 
+    <!-- CONSEGNA -->
     <section id="consegna">
       <div class="consegna-inner">
         <div class="consegna-text">
-          <h2>Il Gusto Arriva <em>Direttamente a Casa Tua</em></h2>
-          <p>Consegniamo a Borsano, in tutta Busto Arsizio e nelle zone adiacenti. Garantiamo pizze calde e fragranti grazie ai nostri contenitori termici professionali.</p>
+          <div class="stag" style="color:rgba(255,255,255,.55)">Ordina subito</div>
+          <h2>Pizza calda<br>a <em>casa tua</em></h2>
+          <p>Ordina su Just Eat in pochi secondi e la consegniamo in 15-30 minuti. Preferisci passare? Ritiro pronto in 15 minuti.</p>
           <div class="consegna-chips">
-            <div class="chip"><div class="chip-ico">⏰</div><div class="chip-val">15-30<em>min</em></div><div class="chip-lbl">Media Consegna</div></div>
+            <div class="chip"><div class="chip-ico">⏱️</div><div class="chip-val">15<em>-30'</em></div><div class="chip-lbl">Consegna</div></div>
+            <div class="chip"><div class="chip-ico">🏃</div><div class="chip-val">15<em>'</em></div><div class="chip-lbl">Ritiro</div></div>
+            <div class="chip"><div class="chip-ico">💶</div><div class="chip-val">€<em>12</em></div><div class="chip-lbl">Min. Ordine</div></div>
+            <div class="chip"><div class="chip-ico">💳</div><div class="chip-val">€<em>2</em></div><div class="chip-lbl">Consegna</div></div>
           </div>
-          <a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer" class="btn-white">Ordina Online su JustEat</a>
+          <a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer" class="btn-white">🛵 Ordina su Just Eat</a>
         </div>
       </div>
     </section>
 
+    <!-- RECENSIONI -->
     <section id="recensioni">
       <div class="si">
-        <div class="rev-top">
-          <div><div class="stag">Dicono di Noi</div><h2>Cosa dicono i <em>Nostri Clienti</em></h2></div>
-          <div style="display: flex; gap: 18px; align-items: center;"><div class="rev-score-big">4.5</div><div><div style="color:#f59e0b;">★★★★★</div><span>690+ Recensioni</span></div></div>
+        <div class="rev-top rv">
+          <div><div class="stag">Cosa dicono di noi</div><h2>Parole <em>vere</em><br>di clienti veri</h2></div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <div class="rev-score-big">4.5</div>
+            <div><div style="color:#f59e0b;font-size:1.2rem">★★★★½</div><span style="font-size:.75rem;color:var(--text-dim);font-weight:600">690+ recensioni verificate<br>su Just Eat · Borsano</span></div>
+          </div>
         </div>
         <div class="rgrid">
-          <div class="rcard">
+          <article class="rcard rv">
             <div class="rcard-stars">★★★★★</div>
-            <div class="rcard-text">"La pizza è eccezionale, l'impasto è leggerissimo. Il kebab in piadina è il migliore di Busto Arsizio!"</div>
-            <div class="reviewer"><div class="rev-av">M</div><div><div class="rev-name">Marco R.</div><span>Google Maps</span></div></div>
-          </div>
-          <div class="rcard">
+            <div class="rcard-text">"Pizza eccellente! L'impasto è leggero, gli ingredienti freschissimi e la consegna è arrivata calda e puntuale. La migliore pizzeria di Busto Arsizio!"</div>
+            <div class="reviewer"><div class="rev-av">👨</div><div><div class="rev-name">Marco B.</div><div class="rev-src">⭐ Just Eat · Busto Arsizio</div></div></div>
+          </article>
+          <article class="rcard rv d1">
             <div class="rcard-stars">★★★★★</div>
-            <div class="rcard-text">"Servizio a domicilio ultra veloce, le pizze arrivano sempre fumanti. Personale super gentile."</div>
-            <div class="reviewer"><div class="rev-av">S</div><div><div class="rev-name">Sara L.</div><span>JustEat</span></div></div>
-          </div>
+            <div class="rcard-text">"Ho ordinato la Pizza Lara e mi ha conquistato! Tonno, funghi e gorgonzola insieme: un abbinamento che non mi aspettavo fosse così buono. Ordino ogni settimana."</div>
+            <div class="reviewer"><div class="rev-av">👩</div><div><div class="rev-name">Valentina C.</div><div class="rev-src">⭐ Just Eat · Borsano</div></div></div>
+          </article>
+          <article class="rcard rv d2">
+            <div class="rcard-stars">★★★★½</div>
+            <div class="rcard-text">"Il venerdì sera è sacro: pizza di Lara! Porzioni generose, sempre puntuali, ottimo rapporto qualità-prezzo. La Fantasia è la mia preferita da mesi."</div>
+            <div class="reviewer"><div class="rev-av">👨</div><div><div class="rev-name">Luca M.</div><div class="rev-src">⭐ Just Eat · Busto Arsizio</div></div></div>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- CONTATTI -->
     <section id="contatti">
       <div class="si">
         <div class="cg">
           <div>
-            <div class="stag">Informazioni</div>
-            <h2>Contattaci o <em>Ordina Subito</em></h2>
-            <div style="margin-top: 24px;">
-              <div class="info-blk">
-                <h3>Contatti & Ordini</h3>
-                <div class="info-row">☎ <a href="tel:+390331342199">+39 0331 342199</a></div>
-                <div class="info-row">📱 <a href="https://wa.me/3900000000">Invia un messaggio WhatsApp</a></div>
-              </div>
-              <div class="info-blk">
-                <h3>Orari di Apertura</h3>
-                <div class="hr-row"><span>Tutti i Giorni</span><span style="color:var(--green); font-weight:800;">11:00 – 14:30 & 17:30 – 22:30</span></div>
-              </div>
+            <div class="stag rv">Dove siamo</div>
+            <h2 class="rv d1">Vieni a <em>trovarci</em></h2>
+            <div class="info-blk rv d2" style="margin-top:28px">
+              <h3>Indirizzo & Contatti</h3>
+              <div class="info-row"><span class="ic">📍</span><address>Piazza Pietro Toselli 4B, Borsano, Busto Arsizio (VA) 21052</address></div>
+              <div class="info-row"><span class="ic">📞</span><a href="tel:+390331342199">+39 0331 342199</a></div>
+              <div class="info-row"><span class="ic">💬</span><a href="https://wa.me/3900000000" target="_blank" rel="noopener noreferrer">Scrivici su WhatsApp</a></div>
+              <div class="info-row"><span class="ic">🛵</span><a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer">Ordina su Just Eat</a></div>
+            </div>
+            <div class="info-blk rv d3">
+              <h3>Orari di Apertura</h3>
+              <div class="hr-row"><span class="day">Lunedì</span><span class="closed">Chiuso</span></div>
+              <div class="hr-row"><span class="day">Martedì – Domenica</span><span class="open">11:00 – 14:30 · 17:30 – 22:30</span></div>
             </div>
           </div>
           <div class="map-box">
-            <div class="map-emo">📍</div>
+            <div class="map-emo">🗺️</div>
             <strong>Pizzeria A Casa di Lara</strong>
-            <p>Piazza Pietro Toselli, 4B, Borsano - Busto Arsizio (VA) - 21052</p>
-            <a href="http://maps.google.com/?q=Pizzeria+A+Casa+di+Lara+Busto+Arsizio" target="_blank" rel="noopener noreferrer">Apri in Google Maps</a>
+            <span style="font-size:.82rem">Piazza Pietro Toselli 4B, Borsano (VA)</span>
+            <a href="https://maps.google.com/?q=Pizzeria+A+Casa+di+Lara+Busto+Arsizio" target="_blank" rel="noopener noreferrer">Apri in Google Maps →</a>
           </div>
         </div>
       </div>
@@ -1009,54 +1228,219 @@
   </main>
 
   <footer>
-    <div class="ft-inner">
-      <div class="ft-logo">Pizzeria A Casa di <em>Lara</em></div>
-      <div class="ft-links">
-        <a href="#chi-siamo">Chi Siamo</a>
-        <a href="#menu">Menu</a>
-        <a href="#contatti">Contatti</a>
+    <div class="fg">
+      <div class="fbrand">
+        <div class="f-logo-name">A Casa di Lara</div>
+        <div class="f-logo-sub">Pizzeria · Borsano, Busto Arsizio</div>
+        <p>Pizzeria artigianale a Borsano di Busto Arsizio. 88 pizze, calzoni, focacce, kebab e tanto altro. Consegna a domicilio in 15-30 min su Just Eat.</p>
+        <div class="socials">
+          <a href="#" class="soc">📷</a>
+          <a href="#" class="soc">👍</a>
+          <a href="https://wa.me/3900000000" class="soc" target="_blank" rel="noopener noreferrer">💬</a>
+          <a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" class="soc" target="_blank" rel="noopener noreferrer">🛵</a>
+        </div>
       </div>
-      <div>© 2026 Pizzeria A Casa di Lara. Tutti i diritti riservati.</div>
+      <div class="fcol"><h4>Menu</h4><ul><li><a href="#menu">Pizze (88)</a></li><li><a href="#menu">Calzoni & Focacce</a></li><li><a href="#menu">Kebab & Menù</a></li><li><a href="#menu">Fritti & Panini</a></li><li><a href="#menu">Dolci & Bevande</a></li></ul></div>
+      <div class="fcol"><h4>Info</h4><ul><li><a href="#chi-siamo">Chi Siamo</a></li><li><a href="#consegna">Consegna</a></li><li><a href="#recensioni">Recensioni</a></li><li><a href="#contatti">Dove Siamo</a></li><li><a href="https://www.justeat.it/restaurants-pizzeriaacasadilara/" target="_blank" rel="noopener noreferrer">Ordina Online</a></li></ul></div>
+      <div class="fcol"><h4>Legale</h4><ul><li><a href="/allergeni">Info Allergeni</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/cookie">Cookie Policy</a></li></ul></div>
+    </div>
+    <div class="fbot">
+      <p>© 2026 Pizzeria A Casa di Lara · Piazza Pietro Toselli 4B, Borsano, Busto Arsizio (VA)</p>
+      <p>Fatto con ❤️ a Borsano</p>
     </div>
   </footer>
 
   <a href="https://wa.me/3900000000" class="wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
 
   <script>
+    // Header sticky
     const hdr = document.getElementById('hdr');
-    window.addEventListener('scroll', () => {
-      hdr.classList.toggle('stuck', window.scrollY > 50);
-    }, { passive: true });
+    window.addEventListener('scroll', () => hdr.classList.toggle('stuck', scrollY > 50), { passive: true });
 
+    // Mobile nav
     const mob = document.getElementById('mobNav');
     const hbtn = document.getElementById('hbtn');
-
-    hbtn.addEventListener('click', () => {
-      mob.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-
-    function cM() {
-      mob.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+    hbtn.addEventListener('click', () => { mob.classList.add('open'); document.body.style.overflow = 'hidden'; });
+    function cM() { mob.classList.remove('open'); document.body.style.overflow = ''; }
     document.getElementById('mobClose').addEventListener('click', cM);
 
-    // Sistema di navigazione dei tab del Menu
+    // Scroll reveal
+    const obs = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
+    }, { threshold: .08, rootMargin: '0px 0px -24px 0px' });
+    document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+    // Tabs
     document.querySelectorAll('.tab').forEach(btn => {
       btn.addEventListener('click', () => {
-        const targetTab = btn.dataset.t;
+        const t = btn.dataset.t;
         document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
         btn.classList.add('on');
-        document.querySelectorAll('.panel').forEach(p => {
-          if (p.id === targetTab) {
-            p.classList.add('on');
-          } else {
-            p.classList.remove('on');
-          }
-        });
+        const target = document.getElementById('tp-' + t);
+        if (target) target.classList.add('on');
       });
     });
+
+    // ═══════════════════════════════════════
+    // FILTRI INTELLIGENTI PIZZA
+    // ═══════════════════════════════════════
+
+    let activeSort = 'default';
+    let activePrice = null;
+    let activeAllergens = new Set();
+    let activeCategory = null;
+
+    const pizzaGrid = document.getElementById('pizza-grid');
+    const allCards = Array.from(pizzaGrid.querySelectorAll('.pcard'));
+    const countEl = document.getElementById('pizza-count');
+    const noResults = document.getElementById('no-results');
+    const searchInput = document.getElementById('pizza-search');
+
+    // Store original order
+    const originalOrder = allCards.map(c => c);
+
+    function getPrice(card) {
+      return parseFloat(card.dataset.price);
+    }
+
+    function applyFilters() {
+      const searchVal = searchInput.value.trim().toLowerCase();
+
+      // Filter
+      let visible = allCards.filter(card => {
+        const name = card.dataset.name.toLowerCase();
+        const allergens = card.dataset.allergens.toLowerCase();
+        const tags = card.dataset.tags.toLowerCase();
+        const desc = card.querySelector('.desc') ? card.querySelector('.desc').textContent.toLowerCase() : '';
+        const price = getPrice(card);
+
+        // Search filter (name + ingredients in desc)
+        if (searchVal) {
+          if (!name.includes(searchVal) && !desc.includes(searchVal)) return false;
+        }
+
+        // Price range filter
+        if (activePrice === 'budget' && price >= 7) return false;
+        if (activePrice === 'mid' && (price < 7 || price >= 9)) return false;
+        if (activePrice === 'premium' && price < 9) return false;
+
+        // Allergen exclusion filter
+        for (const allergen of activeAllergens) {
+          if (allergens.includes(allergen)) return false;
+        }
+
+        // Category filter
+        if (activeCategory) {
+          if (activeCategory === 'vegetariana' && !tags.includes('vegetariana')) return false;
+          if (activeCategory === 'carne' && !tags.includes('carne')) return false;
+          if (activeCategory === 'mare' && !tags.includes('mare')) return false;
+          if (activeCategory === 'piccante' && !tags.includes('piccante')) return false;
+          if (activeCategory === 'signature' && !tags.includes('signature')) return false;
+        }
+
+        return true;
+      });
+
+      // Sort
+      if (activeSort === 'asc') {
+        visible.sort((a, b) => getPrice(a) - getPrice(b));
+      } else if (activeSort === 'desc') {
+        visible.sort((a, b) => getPrice(b) - getPrice(a));
+      } else {
+        // Restore original order
+        visible.sort((a, b) => originalOrder.indexOf(a) - originalOrder.indexOf(b));
+      }
+
+      // Apply visibility and reorder
+      allCards.forEach(c => c.classList.add('hidden'));
+      visible.forEach(c => {
+        c.classList.remove('hidden');
+        pizzaGrid.appendChild(c); // reorder in DOM
+      });
+
+      // Update count
+      countEl.textContent = visible.length;
+      noResults.style.display = visible.length === 0 ? 'block' : 'none';
+    }
+
+    // Search input
+    searchInput.addEventListener('input', applyFilters);
+
+    // Sort chips
+    document.querySelectorAll('.sort-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.sort-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeSort = chip.dataset.sort;
+        applyFilters();
+      });
+    });
+
+    // Price chips (toggle)
+    document.querySelectorAll('.price-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const val = chip.dataset.price;
+        if (activePrice === val) {
+          activePrice = null;
+          chip.classList.remove('active');
+        } else {
+          document.querySelectorAll('.price-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activePrice = val;
+        }
+        applyFilters();
+      });
+    });
+
+    // Allergen chips (multi-select exclusion)
+    document.querySelectorAll('.allergen-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const val = chip.dataset.allergen;
+        if (activeAllergens.has(val)) {
+          activeAllergens.delete(val);
+          chip.classList.remove('active');
+        } else {
+          activeAllergens.add(val);
+          chip.classList.add('active');
+        }
+        applyFilters();
+      });
+    });
+
+    // Category chips (toggle)
+    document.querySelectorAll('.cat-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const val = chip.dataset.cat;
+        if (activeCategory === val) {
+          activeCategory = null;
+          chip.classList.remove('active');
+        } else {
+          document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeCategory = val;
+        }
+        applyFilters();
+      });
+    });
+
+    // Reset all filters
+    document.getElementById('reset-filters').addEventListener('click', () => {
+      activeSort = 'default';
+      activePrice = null;
+      activeAllergens.clear();
+      activeCategory = null;
+      searchInput.value = '';
+
+      document.querySelectorAll('.sort-chip').forEach(c => c.classList.remove('active'));
+      document.querySelector('.sort-chip[data-sort="default"]').classList.add('active');
+      document.querySelectorAll('.price-chip, .allergen-chip, .cat-chip').forEach(c => c.classList.remove('active'));
+
+      applyFilters();
+    });
+
+    // Init count
+    countEl.textContent = allCards.length;
   </script>
 </body>
 </html>
